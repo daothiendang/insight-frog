@@ -7,10 +7,9 @@ engine = phptemplate
 
 regions[page_top] = Page top
 regions[header] = Header
-regions[header_first] = Header First
-regions[navigation_left] = Navigation Left
-regions[highlighted] = Highlighted
-regions[help] = Help
+regions[slideshow] = Slideshow Homepage
+regions[brand_image] = Brand Image
+regions[testimonial] = Testimonial
 regions[content] = Content
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -22,6 +21,8 @@ regions[content_bottom] = Content Bottom
 regions[bottom_column_first]  = Bottom first column
 regions[bottom_column_second] = Bottom second column
 regions[bottom_column_third]  = Bottom third column
+
+regions[hidden] = Hidden
 
 
 features[] = logo
@@ -48,6 +49,7 @@ stylesheets[all][] = css/ie8.css
 
 
 ; Scripts
+scripts[] = js/jquery 1.11.js
 scripts[] = js/modernizr.js
 scripts[] = js/myschool.js
 
