@@ -19,12 +19,12 @@
 /* line 14, ../sass/layout.sass */
 #page {
   *zoom: 1;
-  max-width: 68em;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 68em;
+  width: 100%;
 }
 /* line 18, ../sass/components/bourbon/addons/_clearfix.scss */
 #page:before, #page:after {
@@ -314,11 +314,4 @@
 /* line 117, ../sass/layout.sass */
 .inner {
   padding: 0;
-}
-
-/* Navigation styles */
-/* line 122, ../sass/layout.sass */
-#navigation li {
-  list-style-type: none;
-  display: inline-block;
 }

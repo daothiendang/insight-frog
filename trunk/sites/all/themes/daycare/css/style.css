@@ -1,13 +1,3 @@
-/* Font styles. */
-/* line 2, ../sass/style.sass */
-body {
-  margin: 0;
-  /* Setting up font size, leading and font family
-   * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
-  font: 13px/1.5em "Helvetica Neue", helvetica, Arial, sans-serif;
-  letter-spacing: 0.03em;
-}
-
 /* Links */
 /* line 11, ../sass/style.sass */
 a:link, a:visited {
@@ -18,7 +8,6 @@ a:link, a:visited {
 /* line 16, ../sass/style.sass */
 a:hover, a:active {
   color: red;
-  text-decoration: underline;
 }
 
 /* Titles. */
@@ -74,12 +63,6 @@ h5 {
 h6 {
   font-size: 1em;
   font-weight: bold;
-}
-
-/* Paragraph styles. */
-/* line 60, ../sass/style.sass */
-p {
-  margin: 0 0 1em 0;
 }
 
 /* List styles. */
