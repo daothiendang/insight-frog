@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/insightFrog/sites/all/libraries/ckeditor/';
