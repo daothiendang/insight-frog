@@ -1,88 +1,179 @@
 /***** Custom CSS *****/
-/************* Css for Header******************/
-body
-{
-    font-family: Myriad Pro;
-    margin: 0 10px;
+* {
+    margin: 0;
+    padding: 0;
 }
-#header {position: relative;}
-#search-block-form .container-inline
-{
-    position: absolute;
-    right: 10px;
-    top: 30px;
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: opensan;
+    font-size: 14px;
 }
-#header img
-{
+/*---------------------------------  Font  ---------------------------------  */
+@font-face {
+    font-family: opensan;
+    src: url(../fonts/OPENSANS-REGULAR_0.TTF);
+}
+@font-face {
+    font-family: opensan-bold;
+    src: url(../fonts/OPENSANS-BOLD_0.TTF);
+}
+@font-face {
+    font-family: opensan-light;
+    src: url(../fonts/OPENSANS-LIGHT_0.TTF);
+}
+/*  ------------------------------------------------------------------------  */
+/*---------------------------------- Header --------------------------------  */
+#header {
+    float: left;
+    width: 100%;
+    height: 66px;
+}
+#header_logo a {
+    display: block;
+    float: left;
+    margin-left: 10.7%;
+}
+#header img {
     float:left !important;
 }
-#site-name,#site-name a
-{
-    color: #5B650F;
-    text-decoration:none;
-    font-family: Georgia;
-    font-size:42px;
-    margin-left:30px;
-    font-weight:bold;
-    padding:10px 0 0 0 !important;
+#header_logo {
+    float: left;
+    margin-left: 10.8%;
 }
-#site-slogan
-{
-    color: #98B826;
-    font-family: Georgia;
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 159px;
-    padding-top: 5px;
+#navigation {
+    float: right;
+    margin-right: 9.6%;
+    height: 100%;
 }
-#navigation
-{
-    padding: 10px 10px 10px 32px;
+#primary {
+    height: 100%;
 }
-#navigation li,#footer .content ul
-{
-    display:inline;
+#primary li {
+    display: block;
+    float: left;
+    height: 100%;
+    border-top: 5px solid #1abc9c;
+    font-size: 16px;
 }
-#primary  li a{
-    font-family:Myriad Pro;
-    font-size:13px;
-    color:#FFFFFF;
-    font-weight:bold;
-    padding: 12px 14px;
-    text-shadow:0.5px 0.5px #CCCCCC;
+#primary li a {
+    display: block;
+    padding: 28px 28px 0 28px;
+    height: 100%;
+    text-transform: uppercase;
+    color: #666666;
 }
-#primary .active
-{
-    background-color:#98B827;
+#primary li.menu-218 {
+    border-top: 5px solid #ef6951;
 }
-#banner_img
-{
+#primary li.menu-840 {
+    border-top: 5px solid #1abc9c;
+}
+#primary li.menu-841 {
+    border-top: 5px solid #f1c40f;
+}
+#primary li.menu-842 {
+    border-top: 5px solid #3498db;
+}
+#primary li.menu-843 {
+    border-top: 5px solid #2ecc71;
+}
+#primary li:hover {
+    text-decoration: none;
+}
+#primary li a.active, #primary li a:hover {
+    background-color: #cccccc;
+    color: #FFFFFF;
+}
+#banner_img {
     height:13em;
 }
-#header-region .form-submit
-{
+#header-region .form-submit {
     background-color: #98B827;
     color: #FFFFFF;
     padding: 0 10px;
 }
-#header-region #edit-search-block-form--2
-{
+#header-region #edit-search-block-form--2 {
     width:170px;
     height:28px;
 }
-.menu li a:hover
-{
-    text-decoration:underline;
-}
 
-/**************Css for Content part ***************/
-p
-{
-    color: #817B74;
-    line-height: 1.3em;
-    font-size:14px;
-    text-align: justify;
+
+/*  ---------------------------  Header 2  ---------------------------------  */
+#header2 {
+    float: left;
+    padding: 18px 0;
+    width: 100%;
+    background-color: #f4f4f4;
 }
+#header2 #header2_slogan {
+    float: left;
+    margin-left: 10.8%;
+    width: 27%;
+}
+#header2 #header2_info {
+    float: right;
+    margin-right: 9.6%;
+    width: 29.3%;
+}
+#header2 #header2_slogan p {
+    color: #332f3e;
+    font-size: 24px;
+}
+#header2 #header2_info p {
+    color: #000000;
+    font-size: 14px;
+}
+/*  ------------------------------------------------------------------------  */
+
+/*  -----------------------  Slideshow + Brand Image  ----------------------  */
+#slide_show + img {
+    width: 100%;
+    height: auto;   
+}
+/*  ------------------------------------------------------------------------  */
+
+/*  --------------------------  testimonial  -------------------------------  */
+#box_testimonial {
+    margin-top: 5%;
+    width: 100%;
+    height: 547px;
+    text-align: center;
+}
+#testimonial_title {
+    font-size: 36px;
+    font-family: opensan-light;
+}
+#testimonial_inner {
+    margin: 0 auto;
+    width: 592px;
+}
+#testimonial_inner .testimonial_open_quote {
+    float: left;
+}
+#testimonial_inner .testimonial_close_quote {
+    float: right;
+    margin-top: -70px;
+}
+#testimonial_inner .testimonial_content {
+    margin: 20px 85px 0 85px;
+    padding-top: 25px;
+    width: 430px;
+    color: #020202;
+    line-height: 22px;
+    font-style: italic;
+    font-family: Times New Roman;
+    font-size: 16px;
+}
+#testimonial_inner .testimonial_client_name {
+    clear: both;
+    float: right;
+    margin: 30px 50px 0 0;
+    text-transform: uppercase;
+}
+/*  ------------------------------------------------------------------------  */
+
+
 #content
 {
     padding-left:10px;
@@ -101,6 +192,7 @@ p
 }
 #main
 {
+    clear: both;
     background-color: #FFFFFF;
     margin-bottom: 10px;
 }
@@ -194,13 +286,11 @@ p
 {
     color:#7F7A74;
     font-size: 14px;
-    font-family:Myriad Pro;
 }
 #footer p
 {
     color:#7F7A74;
     font-size: 14px;
-    font-family:Myriad Pro;
     /*margin-left:111px;*/
     text-align:center;
     margin-bottom:2px;  
