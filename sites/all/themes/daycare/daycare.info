@@ -10,6 +10,7 @@ regions[header] = Header
 regions[slideshow] = Slideshow Homepage
 regions[brand_image] = Brand Image
 regions[testimonial] = Testimonial
+regions[our_services] = Our Services
 regions[content] = Content
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -21,8 +22,6 @@ regions[content_bottom] = Content Bottom
 regions[bottom_column_first]  = Bottom first column
 regions[bottom_column_second] = Bottom second column
 regions[bottom_column_third]  = Bottom third column
-
-regions[hidden] = Hidden
 
 
 features[] = logo
@@ -43,6 +42,7 @@ stylesheets[all][] = css/normalize.css
 stylesheets[print][] = css/print.css
 
 
+stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/custom.css
 stylesheets[all][] = css/colors.css
 stylesheets[all][] = css/ie8.css
@@ -52,6 +52,7 @@ stylesheets[all][] = css/ie8.css
 scripts[] = js/jquery 1.11.js
 scripts[] = js/modernizr.js
 scripts[] = js/myschool.js
+scripts[] = js/bootstrap.min.js
 
 
 settings[daycare_tabs] = 1
