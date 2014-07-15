@@ -84,6 +84,7 @@ body {
 #primary li a.active, #primary li a:hover {
     background-color: #cccccc;
     color: #FFFFFF;
+    text-decoration: none;
 }
 #banner_img {
     height:13em;
@@ -122,6 +123,7 @@ body {
 }
 #header2 #header2_info p {
     color: #000000;
+    text-align: justify;
     font-size: 14px;
 }
 /*  ------------------------------------------------------------------------  */
@@ -136,43 +138,107 @@ body {
 /*  --------------------------  testimonial  -------------------------------  */
 #box_testimonial {
     margin-top: 5%;
-    width: 100%;
-    height: 547px;
+    height: 520px;
     text-align: center;
 }
 #testimonial_title {
+    margin-bottom: 65px;
     font-size: 36px;
     font-family: opensan-light;
 }
-#testimonial_inner {
-    margin: 0 auto;
-    width: 592px;
-}
-#testimonial_inner .testimonial_open_quote {
-    float: left;
-}
-#testimonial_inner .testimonial_close_quote {
-    float: right;
-    margin-top: -70px;
-}
-#testimonial_inner .testimonial_content {
-    margin: 20px 85px 0 85px;
-    padding-top: 25px;
-    width: 430px;
+.testimonial_content {
+    padding: 0 68px;
     color: #020202;
     line-height: 22px;
     font-style: italic;
     font-family: Times New Roman;
     font-size: 16px;
 }
-#testimonial_inner .testimonial_client_name {
+.testimonial_content p {
+    padding: 5% 5% 0 5%;
+}
+.testimonial_client_name {
     clear: both;
     float: right;
-    margin: 30px 50px 0 0;
+    margin: 0 5%;
+    padding-right: 67px;
     text-transform: uppercase;
+}
+.div_open_quote {
+    float: left;
+    width: 68px;
+    height: 57px;
+    background: url('../images/1_home/opening_quotation.png') no-repeat;
+}
+.div_close_quote {
+    float: right;
+    margin-top: -30px;
+    width: 68px;
+    height: 57px;
+    background: url('../images/1_home/closing_quotation.png') no-repeat;
+}
+#tell_request {
+    display: block;
+    margin: 15px auto 33px;
+    padding: 3px 0;
+    width: 85%;
+    max-width: 356px;
+    background: #ef6951;
+    color: #fff;
+    line-height: 48px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
 }
 /*  ------------------------------------------------------------------------  */
 
+
+/*  ---------------------------  services  ---------------------------------  */
+#box_services {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+#services_title {
+    margin: 50px 0 37px;
+    font-family: opensan-light;
+    font-size: 36px;
+    text-align: center;
+}
+#services_inner {
+    float: left;
+    width: 100%;
+}
+.services_content {
+    height: 200px;
+    text-align: center;
+}
+.service_polygon {
+    display: block;
+    margin: 0 auto;
+    width: 86px;
+    height: 99px;
+    background: url(../images/1_home/polygon.png) no-repeat center;
+    line-height: 104px;
+}
+.service_icon_hover, .service_polygon:hover .service_icon{
+    display: none;
+}
+.service_polygon:hover {
+    background: url(../images/1_home/polygon_hover.png) no-repeat center;
+    cursor: pointer;
+}
+.service_polygon:hover .service_icon_hover {
+    display: block;
+}
+.service_detail {
+    margin: 13px auto 0 auto;
+    max-width: 230px;
+    font-size: 18px;
+    color: #333333;
+}
+/*  ------------------------------------------------------------------------  */
 
 #content
 {
@@ -354,4 +420,15 @@ ul.social li {
     margin-left: 0;
     margin-right: 2.12766%;
     width: 21.10%;
+}
+
+@media only screen and (max-width:768px){
+    .testimonial_content, .testimonial_client_name {
+        padding: 0 40px;
+    }
+    .testimonial_content p {
+        margin: 0;
+        padding: 0;
+    }
+
 }
