@@ -73,39 +73,42 @@ if ($header_bg_file) {
     <!------------------------------------------------------------------------->
     
     
+    <!--------------------------  our service  -------------------------------->
+    <?php if ($page['our_services']): ?>
+        <?php print render($page['our_services']); ?>
+    <?php endif;?>
+    <!------------------------------------------------------------------------->
+    
+    
     <!--------------------------  content  ------------------------------------>
     <div id="main" class="clearfix">
-        <?php if ($page['content']): ?>
+        <?php if ($page['content'] && !$is_front): ?>
             <?php print render($page['content']); ?>
         <?php endif;?>
-        
-        <!-- Custom Bottom Columns -->
-            <?php if ($page['bottom_column_first'] | $page['bottom_column_second'] |
-                    $page['bottom_column_third']) {
-                ?>
-            <div id="bottom-columns">
-                <?php
-                print daycare_build_columns(array(
-                    render($page['bottom_column_first']),
-                    render($page['bottom_column_second']),
-                    render($page['bottom_column_third']),
-                ));
-                ?>
-            </div> <!--/bottom-columns -->
-<?php } ?>      
-
+        <img src="<?php echo $base_url;?>/sites/all/themes/daycare/images/1_home/instruction.png" style="width:100%; height:auto;"/>
         <div class="clear"></div>
-    </div> <!-- /main -->
+    </div>
 
 
 
     <!-- ______________________ FOOTER _______________________ -->
 
-<?php if ($page['footer']): ?>
+    <?php if ($page['footer']): ?>
         <footer id="footer">
-    <?php print render($page['footer']); ?>
+            <nav id="footer_menu" class="<?php
+                if (!empty($main_menu)) {
+                    print "with-primary";
+                }
+                if (!empty($secondary_menu)) {
+                    print " with-secondary";
+                }
+                ?>">
+                <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
+                <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
+            </nav>
+            <?php print render($page['footer']); ?>
         </footer> <!-- /footer -->
-<?php endif; ?>
-</div> <!-- /page -->
+    <?php endif; ?>
+    </div>
 
 <script src="<?php echo $base_url;?>/sites/all/themes/daycare/js/script.js"></script>
