@@ -19,14 +19,14 @@ if ($header_bg_file) {
     
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <header id="header" style="<?php //echo $header_style;  ?>">
-        <div id="header_logo">
+        <div id="header_logo" class="col-sm-12 col-md-1 col-md-offset-1 col-lg-offset-1 col-lg-2">
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                 <img style="float:left" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
             </a>
         </div>
 
         <?php if ($main_menu || $secondary_menu): ?>
-        <nav id="navigation" class="menu <?php
+        <nav id="navigation" class="col-sm-12 col-md-10 col-lg-offset-1 col-lg-7 menu <?php
             if (!empty($main_menu)) {
                 print "with-primary";
             }
@@ -34,8 +34,8 @@ if ($header_bg_file) {
                 print " with-secondary";
             }
             ?>">
-            <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
-            <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
+            <?php print theme('links', array('links' => $main_menu, 'attributes' => array('class' => array('menu_primary', 'links', 'clearfix', 'main-menu')))); ?>
+            <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary', 'links', 'clearfix', 'sub-menu')))); ?>
         </nav>
     <?php endif; ?>
     </header>
@@ -45,8 +45,12 @@ if ($header_bg_file) {
             <?php $blockSlogan = module_invoke('block', 'block_view', '5');?>
             <?php $blockInfo   = module_invoke('block', 'block_view', '6');?>
         
-            <div id="header2_slogan"><?php echo $blockSlogan['content'];?></div>
-            <div id="header2_info"><?php echo $blockInfo['content'];?></div>
+            <div id="header2_slogan" class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
+                <?php echo $blockSlogan['content'];?>
+            </div>
+            <div id="header2_info"   class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1">
+                <?php echo $blockInfo['content'];?>
+            </div>
         <?php endif; ?>
     </div>
     
@@ -95,19 +99,23 @@ if ($header_bg_file) {
 
     <?php if ($page['footer']): ?>
         <footer id="footer">
-            <nav id="footer_menu" class="<?php
-                if (!empty($main_menu)) {
-                    print "with-primary";
-                }
-                if (!empty($secondary_menu)) {
-                    print " with-secondary";
-                }
-                ?>">
-                <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
-                <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
-            </nav>
-            <?php print render($page['footer']); ?>
-        </footer> <!-- /footer -->
+            <div id="footer_left">
+                <?php print theme('links', array('links' => $main_menu, 'attributes' => array('class' => array('menu_primary', 'links', 'clearfix', 'main-menu')))); ?>
+                <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary', 'links', 'clearfix', 'sub-menu')))); ?>
+            </div>
+            <div id="footer_right">
+                <div id="site_info">
+                    <?php $siteInfo = module_invoke('block', 'block_view', '8');?>
+                    <?php echo $siteInfo['content'];?>
+                </div>
+                <div id="social_icon">
+                    <?php $socialIncon =  module_invoke('block', 'block_view', '9');?>
+                    <?php echo preg_replace('/<p[^>]*>(.*)<\/p[^>]*>/i', '$1', $socialIncon['content']);?>
+                </div>
+                
+                
+            </div>
+        </footer>
     <?php endif; ?>
     </div>
 
