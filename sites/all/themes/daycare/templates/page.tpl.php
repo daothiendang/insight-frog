@@ -72,7 +72,12 @@ if ($header_bg_file) {
     
     <!--------------------------  testimonial  -------------------------------->
     <?php if ($page['testimonial']): ?>
-        <?php print render($page['testimonial']); ?>
+        <div id="box_testimonial">
+            <?php print render($page['testimonial']); ?>
+            <div id="btn_promotion">
+                PROMOTION
+            </div>
+        </div>
     <?php endif;?>
     <!------------------------------------------------------------------------->
     

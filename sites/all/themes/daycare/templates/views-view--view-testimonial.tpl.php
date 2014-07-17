@@ -4,7 +4,6 @@ $rows=$view->style_plugin->rendered_fields;
 if (count($rows)) :
     $title = $view->display[$view->current_display]->display_title;
 ?>
-<div id="box_testimonial">
     <div id="testimonial_title">WHAT OUR CLIENTS SAY</div>
     <div id="testimonial_inner">
         <?php foreach ($rows as $row) :?>
@@ -22,5 +21,4 @@ if (count($rows)) :
             </div>
         <?php endforeach;?>
     </div>
-</div>
 <?php endif; ?>
