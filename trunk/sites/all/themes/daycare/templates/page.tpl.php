@@ -148,7 +148,7 @@ if ($header_bg_file) {
         <?php if ($page['content'] && !$is_front): ?>
             <?php print render($page['content']); ?>
         <?php else: ?>
-            <!--<img src="<?php // echo $base_url;?>/sites/all/themes/daycare/images/1_home/instruction.png" style="width:100%; height:auto;"/>-->
+            <img src="<?php echo $base_url;?>/sites/all/themes/daycare/images/1_home/instruction.png" style="width:100%; height:auto;"/>
         <?php endif;?>
         
         <div class="clear"></div>
