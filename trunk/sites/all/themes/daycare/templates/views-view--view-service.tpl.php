@@ -5,7 +5,7 @@ if (count($rows)) :
     $title = $view->display[$view->current_display]->display_title;
 ?>
 <div id="box_services">
-    <div id="services_title">OUR SERVICE</div>
+    <div id="services_title">OUR SERVICES</div>
     <div id="services_inner">
         <?php foreach ($rows as $row) :?>
             <div>
