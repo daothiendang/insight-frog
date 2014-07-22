@@ -50,7 +50,7 @@
 }
 
 @media only screen and (max-width:992px){
-    #header2 p {
+    #header2 p, .about_title, .about_read_more {
         text-align: center!important;
     }
     #header_logo a {
