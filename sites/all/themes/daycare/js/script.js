@@ -18,12 +18,13 @@ $(document).scroll(function() {
     var y = $(this).scrollTop();
 //    alert(y);
     testimonialDistance = $('#box_testimonial').offset().top - 200;
-    tell_requestDistance = $('#tell_request').offset().top - 100;
+//    tellRequestDistance = $('#tell_request').offset().top - 100;
     offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
     
-    if (y > testimonialDistance && y < tell_requestDistance) {
+//    if (y > testimonialDistance && y < tellRequestDistance) {
+    if (y > testimonialDistance) {
         $('#btn_promotion').css('position', 'fixed');
-        $('#btn_promotion').css('top', '20%');
+        $('#btn_promotion').css('top', '50%');
         $('#btn_promotion').css('right', offsetRight);
     } else {
         $('#btn_promotion').css('position', 'absolute');
@@ -32,6 +33,11 @@ $(document).scroll(function() {
     }
 });
 
-$('#btn_promotion').hover(function() {
 
+//  ---------------------------  About Us  -------------------------------------
+$('.about_read_more').click(function() {
+    $(this).prev().find('.about_summarize, .about_full').toggle();
+    var text = $(this).text();
+    
+    $(this).text(text == "HIDE" ? "READ MORE" : "HIDE");
 });
