@@ -11,7 +11,8 @@
     <?php print $rdf_namespaces; ?>>
 
     <head profile="<?php print $grddl_profile; ?>">
-        <?php print $head; ?>
+        <?php $head = str_replace('favicon.ico', 'favicon.ico?v=2', $head); ?>
+        <?php print_r($head); ?>
         <title><?php print $head_title; ?></title>
         <?php print $styles; ?>
         <?php print $scripts; ?>

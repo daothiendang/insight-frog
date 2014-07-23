@@ -8,8 +8,7 @@ if (count($rows)) :
     <div id="testimonial_inner">
         <?php foreach ($rows as $row) :?>
             <div>
-                <div class="col-lg-3 col-md-3 col-sm-2"></div>
-                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                     <div class="div_open_quote"></div>
                     <div class="testimonial_content">
                         <p><?php print_r($row['body']); ?></p>
@@ -17,7 +16,7 @@ if (count($rows)) :
                     <div class="div_close_quote"></div>
                     <p class="testimonial_client_name"><?php print_r($row['field_client_s_name']); ?></p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-2"></div>
+                <div style="clear:left;"></div>
             </div>
         <?php endforeach;?>
     </div>
