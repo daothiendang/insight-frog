@@ -145,9 +145,12 @@ body {
 /*  --------------------------  testimonial  -------------------------------  */
 #box_testimonial {
     position: relative;
-    margin-top: 5%;
-    height: 520px;
+    margin-top: 7%;
     text-align: center;
+}
+#testimonial_inner {
+    height: 350px;
+    overflow-y: hidden;
 }
 #testimonial_title {
     margin-bottom: 65px;
@@ -305,7 +308,7 @@ body {
 #footer_right a {
     float: left;
     margin-top: 15px;
-    padding-left: 25px;
+    margin-left: 25px;
 }
 #footer_right #site_info {
     float: left;
@@ -489,19 +492,20 @@ ul.social li {
 
 /*  --------------------------  Page About Us  -----------------------------  */
 #about_us_header {
+    clear: both;
     margin-top: 30px;
     margin-bottom: 75px;
+    width: 100%;
+    border-top: 2px dashed #959595;
+    border-bottom: 2px dashed #959595;
 }
 #about_us_header_content {
     margin: 80px auto 40px auto;
     width: 100%;
     max-width: 1280px;
 }
-#about_us_header {
-    clear: both;
-    width: 100%;
-    border-top: 2px dashed #959595;
-    border-bottom: 2px dashed #959595;
+.about_us_header_col {
+    padding-right: 7%;
 }
 .about_title {
     margin-bottom: 24px;
@@ -537,7 +541,8 @@ ul.social li {
     text-align: center;
 }
 .member {
-    /*margin-bottom: 65px;*/
+    height: 45%;
+    overflow-y: hidden;
 }
 .member .member_avatar img {
     width: 212px;
@@ -553,9 +558,9 @@ ul.social li {
     font-size: 18px;
 }
 .member .member_position {
-    overflow: hidden;
     margin-top: 12px;
     height: 85px;
+    overflow-y: hidden;
     color: #666666;
 }
 /*  ------------------------------------------------------------------------  */

@@ -15,21 +15,29 @@ if (noOfTestimonial > 1) {
 
 // promotion button
 $(document).scroll(function() {
-    var y = $(this).scrollTop();
-//    alert(y);
-    testimonialDistance = $('#box_testimonial').offset().top - 200;
-//    tellRequestDistance = $('#tell_request').offset().top - 100;
-    offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
-    
-//    if (y > testimonialDistance && y < tellRequestDistance) {
-    if (y > testimonialDistance) {
-        $('#btn_promotion').css('position', 'fixed');
-        $('#btn_promotion').css('top', '50%');
-        $('#btn_promotion').css('right', offsetRight);
+    windowHeight = $(window).width();
+    if (windowHeight > 768) {
+        var y = $(this).scrollTop();
+    //    alert(y);
+        testimonialDistance = $('#box_testimonial').offset().top - 200;
+    //    tellRequestDistance = $('#tell_request').offset().top - 100;
+        offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
+
+    //    if (y > testimonialDistance && y < tellRequestDistance) {
+        if (y > testimonialDistance) {
+            $('#btn_promotion').css('position', 'fixed');
+            $('#btn_promotion').css('top', '50%');
+            $('#btn_promotion').css('right', offsetRight);
+        } else {
+            $('#btn_promotion').css('position', 'absolute');
+            $('#btn_promotion').css('top', '0');
+            $('#btn_promotion').css('right', 0);
+        }
     } else {
-        $('#btn_promotion').css('position', 'absolute');
+        $('#btn_promotion').css('position', 'relative');
+        $('#btn_promotion').css('margin', '50px auto');
         $('#btn_promotion').css('top', '0');
-        $('#btn_promotion').css('right', 0);
+        $('#btn_promotion').css('right', '0');
     }
 });
 
