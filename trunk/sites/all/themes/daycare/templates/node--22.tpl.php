@@ -3,7 +3,6 @@
     $serviceLeft = module_invoke('block', 'block_view', '13');
     $serviceRight = module_invoke('block', 'block_view', '14');
     $bannerImage = module_invoke('block', 'block_view', '15');
-    $servicesIntroduction = module_invoke('block', 'block_view', '16');
 ?>
 
 <div id="header">
@@ -21,26 +20,8 @@
         <?php echo $bannerImage['content']; ?>
     </div>
 </div>
-
-<div id="service_content">
-    <div class="col-xs-12 col-md-offset-1 col-md-10">
-        <div id="service_main_content" class="col-xs-9">
-            <?php echo $servicesIntroduction['content']; ?>
-            <div id="service_star">
-                <span id="service_star_inner">
-                    <img src="<?php echo $base_url;?>/sites/all/themes/daycare/images/3_service/services_star.png" />
-                </span>
-            </div>
-        </div>
-        <div id="service_right_sidebar" class="col-xs-3">
-            <div id="service_yellow_div">
-                Services
-            </div>
-            <?php
-                $viewService = \block_load('views', '05ed0cb3bba0d8dcabe0bfd75db3df27');
-                $output = \drupal_render(_block_get_renderable_array(_block_render_blocks(array($viewService))));
-                echo $output;
-            ?>
-        </div>
-    </div>
-</div>
+<?php
+    $viewService = \block_load('views', '05ed0cb3bba0d8dcabe0bfd75db3df27');
+    $output = \drupal_render(_block_get_renderable_array(_block_render_blocks(array($viewService))));
+    echo $output;
+?>
