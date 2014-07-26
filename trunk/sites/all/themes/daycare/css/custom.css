@@ -606,8 +606,9 @@ ul.social li {
 /*  ------------------------------------------------------------------------  */
 
 /*  -------------------  Service Main Content  -----------------------------  */
-#service_main_content p {
+#service_main_content p, .service_body tr td {
     color: #6d6e71;
+    font-size: 13px;
 }
 #service_main_content #service_star {
     margin: 25px auto 0 auto;
@@ -623,6 +624,26 @@ ul.social li {
     top: -13px;
     line-height: 18px;
 }
+.service_title {
+    margin-top: 27px;
+    margin-bottom: 38px;
+    color:#ea544a;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: opensan-bold;
+    font-size: 20px;
+}
+.service_body {
+    /*margin-top: 30px;*/
+}
+.service_body table tbody {
+    border-top: 0;
+}
+.service_body table tbody tr td:first-child {
+    padding-right: 3%;
+}
+
+
 /*  ------------------------------------------------------------------------  */
 
 /*  -------------------  Service Right Sidebar  ----------------------------  */
@@ -635,22 +656,47 @@ ul.social li {
     color: #fff;
     font-size: 16px;
 }
-.list_services .service_icon img {
-/*    width: 23px;
-    height: 29px;*/
+#box_services #services_inner {
+    list-style: none;
 }
-.list_services:hover .service_icon{
+.list_services {
+    float: left;
+    width: 100%;
+    min-height: 65px;
+}
+.list_services .service_icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.list_services .service_icon_thumbnail, .list_services .service_icon_hover {
+    display: inline-block;
+}
+.list_services .service_icon_hover {
     display: none;
 }
-.list_services:hover .service_icon_hover {
-    display: block;
-}
-.list_services .service_icon, .list_services .service_icon_hover {
+.list_services .service_icon {
     float: left;
     width: 30%;
 }
 .list_services .service_detail {
     float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
     width: 70%;
+    font-size: 15px;
+}
+.service_detail:hover {
+    color: #ea544a;
+    cursor: pointer;
+}
+.service_icon img:hover {
+    cursor: pointer;
 }
 /*  ------------------------------------------------------------------------  */
+
+
+/*  -------------------  Service Main Content  ----------------------------  */
