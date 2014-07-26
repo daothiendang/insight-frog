@@ -47,5 +47,19 @@ $('.about_read_more').click(function() {
     $(this).prev().find('.about_summarize, .about_full').toggle();
     var text = $(this).text();
     
-    $(this).text(text == "HIDE" ? "READ MORE" : "HIDE");
+    $(this).text(text === "HIDE" ? "READ MORE" : "HIDE");
 });
+
+
+//  ---------------------------  Services  -------------------------------------
+$('.list_services .service_icon_thumbnail img').mouseover(function() {
+   $(this).parent().hide();
+   $(this).parent().next().show();
+   $(this).parent().parent().next().css('color', '#ea544a');
+});
+$('.list_services .service_icon_hover img').mouseout(function() {
+    $(this).parent().hide();
+    $(this).parent().prev().show();
+    $(this).parent().parent().next().css('color', '#333333');
+});
+$('.service_body').appendTo('#service_main_content');
