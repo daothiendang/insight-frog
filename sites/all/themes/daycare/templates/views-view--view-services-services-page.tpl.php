@@ -1,18 +1,52 @@
-<?php 
+<?php
 global $base_url;
-$rows=$view->style_plugin->rendered_fields;
-if (count($rows)) :
-    $title = $view->display[$view->current_display]->display_title;
+$rows = $view->style_plugin->rendered_fields;
+$servicesIntroduction = module_invoke('block', 'block_view', '16');
 ?>
-<div id="box_services">
-    <div id="services_inner">
-        <?php foreach ($rows as $row) :?>
-            <div class="list_services">
-                <div class="service_icon"><?php print_r($row['field_image_thumbnail']);?></div>
-                <div class="service_icon_hover"><?php print_r($row['field_image_hover_red']);?></div>
-                <div class="service_detail"><?php print_r(strip_tags($row['title'])); ?></div>
+
+<div id = "service_content">
+    <div class = "col-xs-12 col-md-offset-1 col-md-10">
+        <div id = "service_main_content" class = "col-xs-9">
+        <?php echo $servicesIntroduction['content'];
+        ?>
+        <div id="service_star">
+            <span id="service_star_inner">
+                <img src="<?php echo $base_url; ?>/sites/all/themes/daycare/images/3_service/services_star.png" />
+            </span>
+        </div>
+        <?php if (count($rows)) :?>
+            <div class="service_title">
+                <?php print_r(strip_tags($rows[0]['title']));; ?>
             </div>
-        <?php endforeach;?>
+            <?php foreach ($rows as $row) : ?>
+                <div class="service_body">
+                    <?php echo $row['body']; ?>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        </div>
+        <div id="service_right_sidebar" class="col-xs-3">
+            <div id="service_yellow_div">
+                Services
+            </div>
+            <div id="box_services">
+                <ul id="services_inner">
+                    <?php if (count($rows)) :?>
+                        <?php foreach ($rows as $row) : ?>
+                            <li class="list_services">
+                                <a href="#" style="display:block;">
+                                    <div class="service_icon">
+                                        <div class="service_icon_thumbnail"><?php print_r($row['field_image_thumbnail']); ?></div>
+                                        <div class="service_icon_hover"><?php print_r($row['field_image_hover_red']); ?></div>
+                                    </div>
+                                    <div class="service_detail"><?php print_r(strip_tags($row['title'])); ?></div>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
-<?php endif; ?>
+
