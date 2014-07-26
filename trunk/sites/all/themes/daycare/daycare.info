@@ -12,16 +12,7 @@ regions[brand_image] = Brand Image
 regions[testimonial] = Testimonial
 regions[our_services] = Our Services
 regions[content] = Content
-regions[sidebar_first] = First sidebar
-regions[sidebar_second] = Second sidebar
 regions[footer] = Footer
-regions[page_bottom] = Page bottom
-
-regions[content_bottom] = Content Bottom
-
-regions[bottom_column_first]  = Bottom first column
-regions[bottom_column_second] = Bottom second column
-regions[bottom_column_third]  = Bottom third column
 
 
 features[] = logo
