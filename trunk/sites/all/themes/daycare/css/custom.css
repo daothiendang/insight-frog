@@ -207,7 +207,7 @@ body {
 /*  ---------------------------  services  ---------------------------------  */
 #box_services {
     float: left;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 100%;
     background-color: #f4f4f4;
 }
@@ -656,13 +656,14 @@ ul.social li {
     color: #fff;
     font-size: 16px;
 }
-#box_services #services_inner {
+#box_services #myTab {
     list-style: none;
+    border: 0;
 }
 .list_services {
     float: left;
     width: 100%;
-    min-height: 65px;
+    min-height: 55px;
 }
 .list_services .service_icon {
     position: relative;
@@ -687,7 +688,7 @@ ul.social li {
     transform: translateY(-50%);
     margin: 0;
     width: 70%;
-    font-size: 15px;
+    font-size: 14px;
 }
 .service_detail:hover {
     color: #ea544a;
