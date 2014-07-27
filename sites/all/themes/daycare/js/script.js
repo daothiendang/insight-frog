@@ -62,4 +62,21 @@ $('.list_services .service_icon_hover img').mouseout(function() {
     $(this).parent().prev().show();
     $(this).parent().parent().next().css('color', '#333333');
 });
-$('.service_body').appendTo('#service_main_content');
+
+// set main content at first time loading
+activeService = '#' + window.location.hash.substr(1);
+if (activeService === '#') {
+    $('#service_1').addClass('active');
+    $('a[href=#service_1]').parent().addClass('active');
+} else {
+    $(activeService).addClass('active');
+    q = 'a[href=' + activeService + ']';alert(q);
+    $('a[href=' + activeService + ']').parent().addClass('active');
+}
+
+
+$('#myTab a').click(function () {
+    window.location.hash = $(this).attr('href');
+//  e.preventDefault();
+//  $(this).tab('show');
+});

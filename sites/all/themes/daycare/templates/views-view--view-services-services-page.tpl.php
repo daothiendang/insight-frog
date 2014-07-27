@@ -15,14 +15,22 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
             </span>
         </div>
         <?php if (count($rows)) :?>
-            <div class="service_title">
-                <?php print_r(strip_tags($rows[0]['title']));; ?>
-            </div>
+            <?php $count = 1;?>
+            <div id="myTabContent" class="tab-content">
             <?php foreach ($rows as $row) : ?>
-                <div class="service_body">
-                    <?php echo $row['body']; ?>
+                <div class="tab-pane fade in" id="service_<?php echo $count;?>">
+                    <div class="service_title">
+                        <?php print_r(strip_tags($row['title'])); ?>
+                    </div>
+
+                    <div class="service_body">
+                        <?php echo $row['body']; ?>
+                    </div>
                 </div>
+                <?php $count++;?>
             <?php endforeach; ?>
+                
+              </div>
         <?php endif; ?>
         </div>
         <div id="service_right_sidebar" class="col-xs-3">
@@ -30,11 +38,12 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
                 Services
             </div>
             <div id="box_services">
-                <ul id="services_inner">
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                    <?php $count = 1;?>
                     <?php if (count($rows)) :?>
                         <?php foreach ($rows as $row) : ?>
                             <li class="list_services">
-                                <a href="#" style="display:block;">
+                                <a href="#service_<?php echo $count;?>" role="tab" data-toggle="tab" style="display:block; background:none; border:none;">
                                     <div class="service_icon">
                                         <div class="service_icon_thumbnail"><?php print_r($row['field_image_thumbnail']); ?></div>
                                         <div class="service_icon_hover"><?php print_r($row['field_image_hover_red']); ?></div>
@@ -42,9 +51,10 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
                                     <div class="service_detail"><?php print_r(strip_tags($row['title'])); ?></div>
                                 </a>
                             </li>
+                            <?php $count++;?>
                         <?php endforeach; ?>
                     <?php endif; ?>
-                </ul>
+              </ul>
             </div>
         </div>
     </div>
