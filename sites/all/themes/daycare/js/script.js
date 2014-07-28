@@ -52,30 +52,53 @@ $('.about_read_more').click(function() {
 
 
 //  ---------------------------  Services  -------------------------------------
-$('.list_services .service_icon_thumbnail img').mouseover(function() {
-   $(this).parent().hide();
-   $(this).parent().next().show();
-   $(this).parent().parent().next().css('color', '#ea544a');
-});
-$('.list_services .service_icon_hover img').mouseout(function() {
-    $(this).parent().hide();
-    $(this).parent().prev().show();
-    $(this).parent().parent().next().css('color', '#333333');
-});
-
 // set main content at first time loading
 activeService = '#' + window.location.hash.substr(1);
 if (activeService === '#') {
-    $('#service_1').addClass('active');
-    $('a[href=#service_1]').parent().addClass('active');
-} else {
-    $(activeService).addClass('active');
-    q = 'a[href=' + activeService + ']';alert(q);
-    $('a[href=' + activeService + ']').parent().addClass('active');
+    activeService = '#service_1';
 }
+$(activeService).addClass('active');
+$('a[href=' + activeService + ']').parent().addClass('active');
+$('.active').find('.service_icon_thumbnail').hide();
+$('.active').find('.service_icon_hover').show();
+
+// hover thumbnail img
+$('.list_services .service_icon_thumbnail img').mouseover(function() {
+    if (!$(this).closest('.list_services').hasClass('active')) {
+        $(this).parent().hide();
+        $(this).parent().next().show();
+        $(this).parent().parent().next().css('color', '#ea544a');
+    }
+});
+$('.list_services .service_icon_hover img').mouseout(function() {
+    if (!$(this).closest('.list_services').hasClass('active')) {
+        $(this).parent().hide();
+        $(this).parent().prev().show();
+        $(this).parent().parent().next().css('color', '#333333');
+    }
+});
+
+// hover service name text
+$('.list_services .service_detail').mouseover(function() {
+    if (!$(this).closest('.list_services').hasClass('active')) {
+        $(this).prev().find('.service_icon_thumbnail').hide();
+        $(this).prev().find('.service_icon_hover').show();
+        $(this).css('color', '#ea544a');
+    }
+});
+$('.list_services .service_detail').mouseout(function() {
+    if (!$(this).closest('.list_services').hasClass('active')) {
+        $(this).prev().find('.service_icon_hover').hide();
+        $(this).prev().find('.service_icon_thumbnail').show();
+        $(this).css('color', '#333333');
+    }
+});
+
 
 
 $('#myTab a').click(function () {
+    $('.active').find('.service_icon_hover').hide();
+    $('.active').find('.service_icon_thumbnail').show();
     window.location.hash = $(this).attr('href');
 //  e.preventDefault();
 //  $(this).tab('show');

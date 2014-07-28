@@ -1,11 +1,11 @@
-<!--  Service Page  -->
+<!--  Partnership Page  -->
 <?php
     global $base_url;
     $serviceLeft = module_invoke('block', 'block_view', '13');
     $serviceRight = module_invoke('block', 'block_view', '14');
     $bannerImage = module_invoke('block', 'block_view', '15');
 ?>
-
+aaa
 <div id="header">
     <div id="service_left_header"  class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
         <?php echo $serviceLeft['content']; ?>
@@ -24,5 +24,5 @@
 <?php
     $viewService = \block_load('views', '05ed0cb3bba0d8dcabe0bfd75db3df27');
     $output = \drupal_render(_block_get_renderable_array(_block_render_blocks(array($viewService))));
-    echo $output;
+    print render($output);
 ?>
