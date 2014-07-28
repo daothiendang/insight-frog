@@ -691,11 +691,13 @@ ul.social li {
     font-size: 14px;
 }
 .service_detail:hover {
-    color: #ea544a;
     cursor: pointer;
 }
 .service_icon img:hover {
     cursor: pointer;
+}
+.list_services.active a .service_detail {
+    color: #ea544a;
 }
 /*  ------------------------------------------------------------------------  */
 
