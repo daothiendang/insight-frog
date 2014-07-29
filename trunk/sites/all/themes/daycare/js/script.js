@@ -99,6 +99,7 @@ $('.list_services .service_detail').mouseout(function() {
 $('#myTab a').click(function () {
     $('.active').find('.service_icon_hover').hide();
     $('.active').find('.service_icon_thumbnail').show();
+    $('.active').find('.service_detail').css('color', '#333333');
     window.location.hash = $(this).attr('href');
 //  e.preventDefault();
 //  $(this).tab('show');
