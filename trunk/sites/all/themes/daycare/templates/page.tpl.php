@@ -47,7 +47,7 @@ if ($header_bg_file) {
                 <?php $blockSlogan = module_invoke('block', 'block_view', '5');?>
                 <?php $blockInfo   = module_invoke('block', 'block_view', '6');?>
 
-                <div id="header2_slogan" class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
+                <div id="header2_slogan" class="col-xs-offset-0 col-xs-12 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
                     <?php echo $blockSlogan['content'];?>
                 </div>
                 <div id="header2_info"   class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1">
@@ -108,7 +108,7 @@ if ($header_bg_file) {
                                 <div class="about_title">INTRODUCTION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
-                                        <?php echo strstr(wordwrap($blockIntro['content'], 240), "\n", true) . '...';?>
+                                        <?php echo strstr(wordwrap($blockIntro['content'], 240), "\n", true);?>
                                     </div>
                                     <div class="about_full">
                                         <?php echo $blockIntro['content'];?>
@@ -124,7 +124,7 @@ if ($header_bg_file) {
                                 <div class="about_title">OUR VISION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
-                                        <?php echo strstr(wordwrap($blockVision['content'], 240), "\n", true) . '...';?>
+                                        <?php echo strstr(wordwrap($blockVision['content'], 240), "\n", true);?>
                                     </div>
                                     <div class="about_full">
                                         <?php echo $blockVision['content'];?>
@@ -141,6 +141,28 @@ if ($header_bg_file) {
             <?php endif; ?>
         <?php endif;?>
     <?php endif; ?>
+    <!------------------------------------------------------------------------->
+    
+    <!-------------- header for page contact us  ---------------------------->
+    <?php if (arg(0) == 'node' && is_numeric(arg(1))): ?>
+        <?php $nodeid = arg(1);?>
+        <?php if ($nodeid == 30):?>
+            <div id="about_us_header">
+                <div id="contact_us_header">
+                    <div id="header_send_email" class="col-xs-4">
+                        <div class="contact_header_item">SEND US AN EMAIL</div>
+                    </div>
+                    <div id="header_reserve"    class="col-xs-4">
+                        <div class="contact_header_item">RESERVE A MEET UP</div>
+                    </div>
+                    <div id="header_customize"  class="col-xs-4">
+                        <div class="contact_header_item">CUSTOMIZE YOUR REQUEST</div>
+                    </div>
+                    <div style="clear:left;"></div>
+                </div>
+            </div>
+        <?php endif; ?>
+    <?php endif;?>
     <!------------------------------------------------------------------------->
     
     <!--------------------------  content  ------------------------------------>
@@ -175,8 +197,8 @@ if ($header_bg_file) {
                         <?php echo preg_replace('/<p[^>]*>(.*)<\/p[^>]*>/i', '$1', $socialIncon['content']);?>
                     </div>
                 </div>
+                <div style="clear:left;"></div>
             </div>
-            <div style="clear:left;"></div>
         </footer>
     <?php endif; ?>
     </div>
