@@ -15,6 +15,10 @@ body {
     src: url(../fonts/OPENSANS-REGULAR_0.TTF);
 }
 @font-face {
+    font-family: opensan-italic;
+    src: url(../fonts/OPENSANS-ITALIC_0.ttf);
+}
+@font-face {
     font-family: opensan-bold;
     src: url(../fonts/OPENSANS-BOLD_0.TTF);
 }
@@ -33,6 +37,9 @@ body {
     float: left;
     width: 100%;
     max-width: 1280px;
+}
+#header_logo {
+    margin-top: 4px;
 }
 #header_logo a {
     display: block;
@@ -58,7 +65,7 @@ body {
 }
 .menu .menu_primary li a {
     display: block;
-    padding: 28px 28px 10px 28px;
+    padding: 26px 28px 16px 28px;
     height: 100%;
     text-transform: uppercase;
     color: #666666;
@@ -112,6 +119,7 @@ body {
     font-size: 24px;
 }
 #header2 #header2_info p {
+    padding-top: 4px;
     color: #000000;
     text-align: justify;
     font-size: 14px;
@@ -145,11 +153,11 @@ body {
 /*  --------------------------  testimonial  -------------------------------  */
 #box_testimonial {
     position: relative;
-    margin-top: 7%;
+    margin-top: 14%;
     text-align: center;
 }
 #testimonial_inner {
-    height: 350px;
+    height: 420px;
     overflow-y: hidden;
 }
 #testimonial_title {
@@ -260,13 +268,12 @@ body {
     font-size: 13px;
 }
 #footer_inner {
-    float: left;
+    margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1100px;
 }
 #footer_left {
     float: left;
-    margin-left: 5%;
 }
 #footer_menu {
     padding: 0;
@@ -299,10 +306,8 @@ body {
 .last {
     border-right:none !important;
 }
-
 #footer_right {
     float: right;
-    margin-right: 5%;
     height: 59px;
 }
 #footer_right a {
@@ -312,13 +317,12 @@ body {
 }
 #footer_right #site_info {
     float: left;
-    margin-right: 25px;
+    margin-right: 75px;
 }
 #footer_right #social_icon {
     float: left;
 }
 /*  ------------------------------------------------------------------------  */
-
 
 #content
 {
@@ -470,22 +474,21 @@ ul.social li {
 }
 
 
-
-
-
-@media only screen and (max-width:1240px){
+@media only screen and (max-width:1180px){
     #footer_left {
         float: none;
         margin: 0 auto;
         width: 100%;
         max-width: 480px;
-        
+    }
+    #footer_right #site_info {
+        margin-right: 50px;
     }
     #footer_right {
         float: none;
         margin: 0 auto;
         width: 100%;
-        max-width: 645px;
+        max-width: 525px;
     }
 }
 
@@ -520,7 +523,7 @@ ul.social li {
     display: none;
 }
 .about_read_more {
-    margin-bottom: 30px;
+    margin: 15px 0 25px 0;
     padding-left: 14px;
     background: url(../images/2_about/icon_read_more.png) left no-repeat;
     color: #89a33c;
@@ -655,6 +658,9 @@ ul.social li {
     background: #f1c40f;
     color: #fff;
     font-size: 16px;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    1px 1px 4px 0px rgba(50, 50, 50, 1);
+    box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 1);
 }
 #box_services #myTab {
     list-style: none;
@@ -702,4 +708,80 @@ ul.social li {
 /*  ------------------------------------------------------------------------  */
 
 
-/*  -------------------  Service Main Content  ----------------------------  */
+/*  -------------------  Service Main Content  -----------------------------  */
+/*  ------------------------------------------------------------------------  */
+
+
+/*  -----------------------  Page Partnership  -----------------------------  */
+#box_partnership {
+    float: left;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    width: 100%;
+    background: #ecf0f1;
+}
+#become_partner {
+    display: block;
+    margin: 46px auto;
+    padding: 3px 0;
+    width: 250px;
+    background: #ef6951;
+    color: #fff;
+    line-height: 48px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: opensan-bold
+}
+#partner_inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+#partner_inner div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.partner {
+    display: block;
+    margin: 5px 0;
+}
+.partner img {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    1px 1px 4px 0px rgba(50, 50, 50, 1);
+    box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 1);
+}
+/*  ------------------------------------------------------------------------  */
+
+
+/*  ------------------------  Contact us Page  -----------------------------  */
+#contact_us_header {
+    margin: 50px auto 70px;
+    width: 100%;
+    max-width: 1000px;
+}
+#contact_us_header .col-xs-4 {
+    padding: 0;
+    text-align: center;
+}
+.contact_header_item {
+    margin: 0 5px;
+    height: 194px;
+    line-height: 194px;
+    color: #f4f4f4;
+    font-family: opensan-bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+#header_send_email .contact_header_item {
+    background: #ef6951;
+}
+#header_reserve .contact_header_item {
+    background: #2ecc71;
+}
+#header_customize .contact_header_item {
+    background: #3498db;
+}
+/*  ------------------------------------------------------------------------  */
