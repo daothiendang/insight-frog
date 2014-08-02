@@ -34,7 +34,7 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
         <?php endif; ?>
         </div>
         <div id="service_right_sidebar" class="col-xs-3">
-            <div id="service_yellow_div">
+            <div id="service_yellow_div" class="box_shadow">
                 Services
             </div>
             <div id="box_services">

@@ -6,12 +6,12 @@ if (count($rows)) :
 ?>
 <div id="box_partnership">
     <div style="float:left; width:100%; text-align: center;">
-        <a id="become_partner" href="#">BECOME OUR PARTNER</a>
+        <a id="become_partner" class="box_shadow" href="#">BECOME OUR PARTNER</a>
     </div>
     <div id="partner_inner">
         <?php foreach ($rows as $row) :?>
                 <div class="col-sm-4 col-xs-6">
-                    <a title="<?php print_r(strip_tags($row['title'])); ?>" href="<?php echo strip_tags($row['field_partner_link']);?>" class="partner" target="_blank">
+                    <a title="<?php print_r(strip_tags($row['title'])); ?>" href="<?php echo strip_tags($row['field_partner_link']);?>" class="partner box_shadow_big" target="_blank">
                         <?php print_r($row['field_partner_image']);?>
                     </a>
                 </div>
