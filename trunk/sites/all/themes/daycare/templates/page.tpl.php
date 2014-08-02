@@ -150,13 +150,13 @@ if ($header_bg_file) {
             <div id="about_us_header">
                 <div id="contact_us_header">
                     <div id="header_send_email" class="col-xs-4">
-                        <div class="contact_header_item">SEND US AN EMAIL</div>
+                        <div class="contact_header_item box_shadow_big">SEND US AN EMAIL</div>
                     </div>
                     <div id="header_reserve"    class="col-xs-4">
-                        <div class="contact_header_item">RESERVE A MEET UP</div>
+                        <div class="contact_header_item box_shadow_big">RESERVE A MEET UP</div>
                     </div>
                     <div id="header_customize"  class="col-xs-4">
-                        <div class="contact_header_item">CUSTOMIZE YOUR REQUEST</div>
+                        <div class="contact_header_item box_shadow_big">CUSTOMIZE YOUR REQUEST</div>
                     </div>
                     <div style="clear:left;"></div>
                 </div>

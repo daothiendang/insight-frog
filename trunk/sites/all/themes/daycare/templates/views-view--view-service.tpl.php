@@ -19,7 +19,7 @@ if (count($rows)) :
             </div>
         <?php endforeach;?>
         <div style="float:left; width:100%; text-align: center;">
-            <a href="#" id="tell_request">Tell us your special request</a>
+            <a href="#" id="tell_request" class="box_shadow">Tell us your special request</a>
         </div>
     </div>
 </div>
