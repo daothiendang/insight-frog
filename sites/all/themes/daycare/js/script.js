@@ -1,3 +1,4 @@
+/*  ----------------------------  Home page  -------------------------------  */
 // testimonial
 noOfTestimonial = $("#testimonial_inner .testimonial_content").length;
 if (noOfTestimonial > 1) {
@@ -94,9 +95,7 @@ $('.list_services .service_detail').mouseout(function() {
     }
 });
 
-
-
-$('#myTab a').click(function () {
+$('box_services #myTab a').click(function () {
     $('.active').find('.service_icon_hover').hide();
     $('.active').find('.service_icon_thumbnail').show();
     $('.active').find('.service_detail').css('color', '#333333');
@@ -104,3 +103,9 @@ $('#myTab a').click(function () {
 //  e.preventDefault();
 //  $(this).tab('show');
 });
+
+/*  ----------------------------  Contact  -------------------------------  */
+$('#about_us_header #myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
