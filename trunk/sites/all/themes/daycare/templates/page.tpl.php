@@ -147,19 +147,25 @@ if ($header_bg_file) {
     <?php if (arg(0) == 'node' && is_numeric(arg(1))): ?>
         <?php $nodeid = arg(1);?>
         <?php if ($nodeid == 30):?>
-            <div id="about_us_header">
-                <div id="contact_us_header">
-                    <div id="header_send_email" class="col-xs-4">
-                        <div class="contact_header_item box_shadow_big">SEND US AN EMAIL</div>
-                    </div>
-                    <div id="header_reserve"    class="col-xs-4">
-                        <div class="contact_header_item box_shadow_big">RESERVE A MEET UP</div>
-                    </div>
-                    <div id="header_customize"  class="col-xs-4">
-                        <div class="contact_header_item box_shadow_big">CUSTOMIZE YOUR REQUEST</div>
-                    </div>
-                    <div style="clear:left;"></div>
-                </div>
+            <div id="about_us_header" style="margin-bottom:40px;">
+                <ul id="myTab" class="contact_us_header" role="tablist">
+                    <li id="header_send_email" class="col-xs-4">
+                        <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            SEND US AN EMAIL
+                        </a>
+                    </li>
+                    <li id="header_reserve"    class="col-xs-4">
+                        <a href="#contact_reserve" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            RESERVE A MEET UP
+                        </a>
+                    </li>
+                    <li id="header_customize"  class="col-xs-4">
+                        <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            CUSTOMIZE YOUR REQUEST
+                        </a>
+                    </li>
+                    <li style="clear:left;"></li>
+                </ul>
             </div>
         <?php endif; ?>
     <?php endif;?>
