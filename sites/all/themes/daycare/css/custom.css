@@ -614,16 +614,17 @@ ul.social li {
 #service_content {
     clear: left;
     margin: 0 auto;
-    min-height: 1042px;
+    min-height: 920px;
 }
 #service_main_content {
     float: left;
-    padding-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0 0 0;
 }
 #service_right_sidebar {
     float: left;
     padding: 0;
-    min-height: 1042px;
+    min-height: 920px;
     background: #f4f4f4;
     overflow: visible;
 }
@@ -633,6 +634,9 @@ ul.social li {
 #service_main_content p, .service_body tr td {
     color: #6d6e71;
     font-size: 14px;
+}
+#service_main_content p {
+    padding-right: 20px;
 }
 #service_main_content #service_star {
     margin: 25px auto 0 auto;
@@ -667,7 +671,7 @@ ul.social li {
     padding-right: 3%;
 }
 #table_translation_yellow p {
-    padding: 10px;
+    padding: 10px 0 10px 10px;
 }
 
 /*  ------------------------------------------------------------------------  */
