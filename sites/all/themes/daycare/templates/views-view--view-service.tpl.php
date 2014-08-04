@@ -10,11 +10,11 @@ if (count($rows)) :
         <?php foreach ($rows as $row) :?>
             <div>
                 <div class="col-sm-4 col-xs-6 services_content">
-                    <a class="service_polygon" href="#">
-                        <div class="service_icon"><?php print_r($row['field_image_thumbnail']);?></div>
-                        <div class="service_icon_hover"><?php print_r($row['field_image_hover']);?></div>
+                    <a class="service_polygon" href="<?php echo $base_url . '/services/#' . $row['field_display_position'];?>">
+                        <div class="service_icon"><?php echo $row['field_image_thumbnail'];?></div>
+                        <div class="service_icon_hover"><?php echo $row['field_image_hover'];?></div>
                     </a>
-                    <div class="service_detail"><?php print_r(strip_tags($row['title'])); ?></div>
+                    <div class="service_detail"><?php echo strip_tags($row['title']); ?></div>
                 </div>
             </div>
         <?php endforeach;?>
