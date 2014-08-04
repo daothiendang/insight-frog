@@ -56,7 +56,7 @@ $('.about_read_more').click(function() {
 // set main content at first time loading
 activeService = '#' + window.location.hash.substr(1);
 if (activeService === '#') {
-    activeService = '#service_1';
+    activeService = '#1';
 }
 $(activeService).addClass('active');
 $('a[href=' + activeService + ']').parent().addClass('active');
@@ -95,7 +95,7 @@ $('.list_services .service_detail').mouseout(function() {
     }
 });
 
-$('box_services #myTab a').click(function () {
+$('#box_services #myTab a').click(function () {
     $('.active').find('.service_icon_hover').hide();
     $('.active').find('.service_icon_thumbnail').show();
     $('.active').find('.service_detail').css('color', '#333333');
@@ -106,6 +106,6 @@ $('box_services #myTab a').click(function () {
 
 /*  ----------------------------  Contact  -------------------------------  */
 $('#about_us_header #myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+    e.preventDefault();
+    $(this).tab('show');
+});
