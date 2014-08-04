@@ -632,7 +632,7 @@ ul.social li {
 /*  -------------------  Service Main Content  -----------------------------  */
 #service_main_content p, .service_body tr td {
     color: #6d6e71;
-    font-size: 13px;
+    font-size: 14px;
 }
 #service_main_content #service_star {
     margin: 25px auto 0 auto;
@@ -666,7 +666,9 @@ ul.social li {
 .service_body table tbody tr td:first-child {
     padding-right: 3%;
 }
-
+#table_translation_yellow p {
+    padding: 10px;
+}
 
 /*  ------------------------------------------------------------------------  */
 
