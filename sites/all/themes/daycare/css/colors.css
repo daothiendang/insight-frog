@@ -139,7 +139,7 @@ h1, h2 { color: #333333; }
     }
     /*  -------------------------------  about us  -------------------------  */
     .about_us_header_col {
-        padding-right: 0;
+        padding-right: 15px;
     }
     .member {
         padding: 0;

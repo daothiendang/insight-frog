@@ -9,6 +9,9 @@ body {
     font-family: opensan;
     font-size: 14px;
 }
+.bold {
+    font-family: opensan-bold;
+}
 .box_shadow {
     -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
     -moz-box-shadow:    1px 1px 4px 0px rgba(50, 50, 50, 1);
@@ -558,9 +561,16 @@ ul.social li {
     height: 45%;
     overflow-y: hidden;
 }
-.member .member_avatar img {
+.member .member_avatar {
+    margin: 0 auto;
     width: 212px;
-    height: 212px;
+    max-width: 90%;
+    height: auto;
+    max-height: 212px;
+}
+.member .member_avatar img {
+    width: 100%;
+    max-height: 100%;
     border-radius: 106px;
     border: 1px solid #767676;
 }
@@ -793,7 +803,7 @@ a.contact_header_item {
 }
 
 #contact_container {
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     max-width: 1100px;
     min-height: 100px;
 }
@@ -859,7 +869,7 @@ a.contact_header_item {
     color: #666;
 }
 .contact_info #info_title {
-    margin-bottom: 12px;
+    margin-bottom: 34px;
     line-height: 36px;
     font-family: opensan-bold;
     font-size: 24px;
