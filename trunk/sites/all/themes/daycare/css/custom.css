@@ -156,9 +156,9 @@ body {
     background: url('../images/1_home/btn_promotion.png') no-repeat;
     color: #fff;
     text-align: left;
+    text-decoration: none;
     font-family: Times New Roman;
     font-size: 16px;
-    cursor: pointer;
 }
 /*  ------------------------------------------------------------------------  */
 
@@ -667,9 +667,6 @@ ul.social li {
 .service_body table tbody {
     border-top: 0;
 }
-.service_body table tbody tr td:first-child {
-    padding-right: 3%;
-}
 #table_translation_yellow p {
     padding: 10px 0 10px 10px;
 }
@@ -728,6 +725,13 @@ ul.social li {
 }
 .list_services.active a .service_detail {
     color: #ea544a;
+}
+.service_body ul li {
+    background: url(../images/green_bullet.png) no-repeat 0px 7px;
+    padding-left: 15px;
+    /* reset styles (optional): */
+    list-style: none;
+    margin: 0;
 }
 /*  ------------------------------------------------------------------------  */
 
@@ -910,4 +914,24 @@ a.contact_header_item {
     width: 100%;
     height: 300px;
 }
+/*  ------------------------------------------------------------------------  */
+
+
+/*  -------------------------  Promotion  Page  ----------------------------  */
+#promotion_content {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+#promotion_yellow_div {
+    margin: 30px auto;
+    padding: 18px 20px;
+    width: 126px;
+    max-width: 100%;
+    background: #f1c40f;
+    color: #fff;
+    font-size: 16px;
+}
+
+
 /*  ------------------------------------------------------------------------  */
