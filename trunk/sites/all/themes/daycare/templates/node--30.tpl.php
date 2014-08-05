@@ -1,7 +1,9 @@
 <?php
+    
     $block1 = block_load('webform', 'client-block-30');
     $sendEmail = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block1))));
     
+    // get contact information
     $phone    = check_plain($node->field_phone[$node->language][0]['value']);
     $phone2   = check_plain($node->field_phone_2[$node->language][0]['value']);
     $email    = check_plain($node->field_email[$node->language][0]['value']);
@@ -55,11 +57,11 @@
         </div>
         <div class="tab-pane fade in" id="contact_reserve">
             <span class="contact_title" style="color:#2ecc71;">RESERVE A MEETUP</span><br><br><br>
-            This function is under construction
+            This function is currently under development
         </div>
         <div class="tab-pane fade in" id="contact_customize">
-            <span class="contact_title" style="color:#3498db;">SEND US AN EMAIL</span><br><br><br>
-            This function is under construction
+            <span class="contact_title" style="color:#3498db;">CUSTOMIZE YOUR REQUEST</span><br><br><br>
+            This function is currently under development
         </div>
         <div class="clear"></div>
     </div>

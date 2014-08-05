@@ -77,9 +77,11 @@ if ($header_bg_file) {
         <?php if ($page['testimonial']): ?>
             <div id="box_testimonial">
                 <?php print render($page['testimonial']); ?>
-                <div id="btn_promotion">
-                    PROMOTION
-                </div>
+                <a href="<?php echo $base_url;?>/promotion">
+                    <div id="btn_promotion">
+                        PROMOTION
+                    </div>
+                </a>
             </div>
         <?php endif;?>
         <!------------------------------------------------------------------------->
