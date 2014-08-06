@@ -109,3 +109,11 @@ $('#about_us_header #myTab a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
 });
+
+
+/*  ---------------------------  Promotion  --------------------------------  */
+$('.promotion_read_more').click(function() {
+    $(this).next().slideToggle('slow', function() {});
+    var text = $(this).text();
+    $(this).text(text === "HIDE" ? "READ MORE" : "HIDE");
+});
