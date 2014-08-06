@@ -536,7 +536,7 @@ ul.social li {
 .about_full {
     display: none;
 }
-.about_read_more {
+.about_read_more, .promotion_read_more {
     margin: 15px 0 25px 0;
     padding-left: 14px;
     background: url(../images/2_about/icon_read_more.png) left no-repeat;
@@ -726,7 +726,7 @@ ul.social li {
 .list_services.active a .service_detail {
     color: #ea544a;
 }
-.service_body ul li {
+.service_body ul li, .promotion_text ul li {
     background: url(../images/green_bullet.png) no-repeat 0px 7px;
     padding-left: 15px;
     /* reset styles (optional): */
@@ -918,7 +918,7 @@ a.contact_header_item {
 
 
 /*  -------------------------  Promotion  Page  ----------------------------  */
-#promotion_content {
+.promotion_content {
     float: left;
     margin: 0 auto;
     width: 100%;
@@ -932,6 +932,24 @@ a.contact_header_item {
     color: #fff;
     font-size: 16px;
 }
+.promotion_list {
+    clear: left;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.promotion_list img {
+    width: 100%;
+}
 
+.promotion_title {
+    margin-top: -6px;
+    color: #ea544a;
+    font-family: opensan-bold;
+    font-size: 18px;
+}
+.promotion_text {
+    margin-top: 5px;
+    color: #6d6e71;
+}
 
 /*  ------------------------------------------------------------------------  */
