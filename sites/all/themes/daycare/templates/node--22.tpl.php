@@ -21,8 +21,3 @@
         <?php echo $bannerImage['content']; ?>
     </div>
 </div>
-<?php
-    $viewService = \block_load('views', '05ed0cb3bba0d8dcabe0bfd75db3df27');
-    $output = \drupal_render(_block_get_renderable_array(_block_render_blocks(array($viewService))));
-    echo $output;
-?>

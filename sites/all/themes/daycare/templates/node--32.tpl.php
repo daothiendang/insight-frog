@@ -21,6 +21,6 @@
     </div>
 </div>
 
-<div id="promotion_content">
+<div class="promotion_content">
     <div id="promotion_yellow_div" class="box_shadow">Promotion</div>
 </div>
