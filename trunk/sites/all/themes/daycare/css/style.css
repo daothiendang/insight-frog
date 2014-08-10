@@ -7,7 +7,7 @@ a:link, a:visited {
 
 /* line 16, ../sass/style.sass */
 a:hover, a:active {
-  color: red;
+    text-decoration: none;
 }
 
 /* Titles. */
