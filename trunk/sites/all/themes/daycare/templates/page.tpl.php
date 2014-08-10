@@ -110,15 +110,17 @@ if ($header_bg_file) {
                                 <div class="about_title">INTRODUCTION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
-                                        <?php echo strstr(wordwrap($blockIntro['content'], 240), "\n", true);?>
+                                        <?php echo strstr(wordwrap($blockIntro['content'], 250), "\n", true);?>
                                     </div>
                                     <div class="about_full">
                                         <?php echo $blockIntro['content'];?>
                                     </div>
                                 </div>
-                                <div class="about_read_more">
-                                    READ MORE
-                                </div>
+                                <?php if (strlen($blockIntro['content']) > 250):?>
+                                    <div class="about_read_more">
+                                        READ MORE
+                                    </div>
+                                <?php endif?>
                             </div>
                         </div>
                         <div id="header2_info"   class="col-xs-12 col-sm-6">
@@ -126,15 +128,17 @@ if ($header_bg_file) {
                                 <div class="about_title">OUR VISION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
-                                        <?php echo strstr(wordwrap($blockVision['content'], 240), "\n", true);?>
+                                        <?php echo strstr(wordwrap($blockVision['content'], 250), "\n", true);?>
                                     </div>
                                     <div class="about_full">
                                         <?php echo $blockVision['content'];?>
                                     </div>
                                 </div>
-                                <div class="about_read_more">
-                                    READ MORE
-                                </div>
+                                <?php if (strlen($blockVision['content']) > 250):?>
+                                    <div class="about_read_more">
+                                        READ MORE
+                                    </div>
+                                <?php endif;?>
                             </div>
                         </div>
                         <div style="clear:left"></div>

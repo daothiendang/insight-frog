@@ -1,4 +1,4 @@
-<!-----------------------------  Contact Us  ---------------------------------->
+<!------------------------------  Promotion  ---------------------------------->
 <?php
     global $base_url;
     $promotionLeft  = module_invoke('block', 'block_view', '17');
@@ -15,12 +15,8 @@
     </div>
 </div>
 
-<div id="service_banner">
+<div id="promotion_banner">
     <div class="col-xs-12 col-md-offset-1 col-md-10">
         <?php echo $bannerImage['content']; ?>
     </div>
-</div>
-
-<div class="promotion_content">
-    <div id="promotion_yellow_div" class="box_shadow">Promotion</div>
 </div>
