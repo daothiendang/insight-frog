@@ -677,10 +677,11 @@ ul.social li {
 #service_yellow_div {
     margin: 27px auto;
     padding: 15px 18px 15px 18px;
-    width: 96px;
+    width: 115px;
     max-width: 100%;
     background: #f1c40f;
     color: #fff;
+    text-decoration: none;
     font-size: 16px;
 }
 #box_services #myTab, .contact_us_header#myTab {
@@ -918,27 +919,68 @@ a.contact_header_item {
 
 
 /*  -------------------------  Promotion  Page  ----------------------------  */
+#promotion_banner {
+    float:left;
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+}
+
 .promotion_content {
     float: left;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
     width: 100%;
 }
-#promotion_yellow_div {
-    margin: 30px auto;
-    padding: 18px 20px;
-    width: 126px;
-    max-width: 100%;
+
+.promotion_button_div .promotion_button_item:first-child {
+    padding-left: 0;
+}
+.promotion_button_div .promotion_button_item:last-child {
+    padding-right: 0;
+}
+.promotion_button_item {
+    height: 60px; 
+    position: relative;
+}
+.promotion_button {
+    position: absolute; 
+    float: left;
+    display: table;
+    width: 100%;
+    height: 60px;
+}
+#promotion_button_1 {
+    background: #e74c3c;
+}
+#promotion_button_2 {
+    background: #e67e22;
+}
+#promotion_button_3 {
     background: #f1c40f;
+}
+.promotion_price {
+    margin-top: 10px;
+    color: #e74c3c;
+    font-family: opensan-bold;
+    font-size: 24px;
+}
+.promotion_button a {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
     color: #fff;
-    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: opensan-bold;
+    font-size: 18px;
 }
 .promotion_list {
     clear: left;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     width: 100%;
 }
-.promotion_list img {
-    width: 100%;
+.promotion_list .promotion_img {
+    text-align: center;
 }
 
 .promotion_title {
