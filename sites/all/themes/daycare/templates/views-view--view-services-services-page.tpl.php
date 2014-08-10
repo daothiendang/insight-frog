@@ -32,9 +32,11 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
         <?php endif; ?>
         </div>
         <div id="service_right_sidebar" class="col-xs-3">
-            <div id="service_yellow_div" class="box_shadow">
-                Services
-            </div>
+            <a href="<?php echo $base_url;?>/promotion">
+                <div id="service_yellow_div" class="box_shadow">
+                    Promotion
+                </div>
+            </a>
             <div id="box_services">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
                     <?php $count = 1;?>
