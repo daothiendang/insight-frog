@@ -156,19 +156,25 @@ if ($header_bg_file) {
             <div id="about_us_header" style="margin-bottom:40px;">
                 <ul id="myTab" class="contact_us_header" role="tablist">
                     <li id="header_send_email" class="col-xs-4">
-                        <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                            SEND US AN EMAIL
-                        </a>
+                        <div class="contact_us_box">
+                            <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                                SEND US AN EMAIL
+                            </a>
+                        </div>
                     </li>
                     <li id="header_reserve"    class="col-xs-4">
-                        <a href="#contact_reserve" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                            RESERVE A MEET UP
-                        </a>
+                        <div class="contact_us_box">
+                            <a href="#contact_reserve" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                                RESERVE A MEET UP
+                            </a>
+                        </div>
                     </li>
                     <li id="header_customize"  class="col-xs-4">
-                        <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                            CUSTOMIZE YOUR REQUEST
-                        </a>
+                        <div class="contact_us_box">
+                            <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                                CUSTOMIZE YOUR REQUEST
+                            </a>
+                        </div>
                     </li>
                     <li style="clear:left;"></li>
                 </ul>
