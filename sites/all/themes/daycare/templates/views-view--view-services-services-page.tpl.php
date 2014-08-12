@@ -6,7 +6,7 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
 
 <div id = "service_content">
     <div class = "col-xs-12 col-md-offset-1 col-md-10">
-        <div id = "service_main_content" class = "col-xs-9">
+        <div id = "service_main_content" class = "col-xs-10 col-sm-11 col-md-9">
         <?php echo $servicesIntroduction['content'];
         ?>
         <div id="service_star">
@@ -31,12 +31,10 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
               </div>
         <?php endif; ?>
         </div>
-        <div id="service_right_sidebar" class="col-xs-3">
-            <a href="<?php echo $base_url;?>/promotion">
-                <div id="service_yellow_div" class="box_shadow">
-                    Promotion
-                </div>
-            </a>
+        <div id="service_right_sidebar" class="col-xs-2 col-sm-1 col-md-3">
+            <div id="service_yellow_div" class="box_shadow">
+                Services
+            </div>
             <div id="box_services">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
                     <?php $count = 1;?>
@@ -54,8 +52,13 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
                             <?php $count++;?>
                         <?php endforeach; ?>
                     <?php endif; ?>
-              </ul>
+                </ul>
             </div>
+            <a href="<?php echo $base_url;?>/promotion">
+                <div id="service_promotion_div" class="box_shadow">
+                    PROMOTION
+                </div>
+            </a>
         </div>
     </div>
 </div>
