@@ -229,7 +229,7 @@ body {
 /*  ---------------------------  services  ---------------------------------  */
 #box_services {
     float: left;
-    margin: 30px auto;
+    margin: 30px auto 10px auto;
     width: 100%;
     background-color: #f4f4f4;
 }
@@ -677,7 +677,7 @@ ul.social li {
 #service_yellow_div {
     margin: 27px auto;
     padding: 15px 18px 15px 18px;
-    width: 115px;
+    width: 98px;
     max-width: 100%;
     background: #f1c40f;
     color: #fff;
@@ -734,6 +734,19 @@ ul.social li {
     list-style: none;
     margin: 0;
 }
+#service_promotion_div {
+    clear: left;
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 160px;
+    max-width: 100%;
+    background: #E74C3C;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: opensan-bold;
+    font-size: 16px;
+}
 /*  ------------------------------------------------------------------------  */
 
 
@@ -788,28 +801,44 @@ ul.social li {
     width: 100%;
     max-width: 1050px;
 }
-.contact_us_header .col-xs-4 {
-    padding: 0;
-    text-align: center;
+.contact_us_header li.col-xs-4 {
+    height: 194px;
+    position: relative;
+}
+.contact_us_box {
+    position: absolute;
+    float: left;
+    display: table;
+    width: 100%;
+    height: 194px;
 }
 a.contact_header_item {
-    display: block;
+    display: table-cell;
+    vertical-align: middle;
     margin: 0 5px;
-    height: 194px;
-    line-height: 194px;
     color: #f4f4f4;
     text-decoration: none;
+    text-align: center;
     font-family: opensan-bold;
     font-size: 20px;
     cursor: pointer;
 }
-#header_send_email .contact_header_item {
+#header_send_email {
+    padding-left: 6px;
+}
+#header_reserve {
+    padding: 0 3px;
+}
+#header_customize {
+    padding-right: 6px;
+}
+#header_send_email .contact_us_box {
     background: #ef6951;
 }
-#header_reserve .contact_header_item {
+#header_reserve .contact_us_box {
     background: #2ecc71;
 }
-#header_customize .contact_header_item {
+#header_customize .contact_us_box {
     background: #3498db;
 }
 
