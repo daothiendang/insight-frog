@@ -17,6 +17,8 @@ if ($header_bg_file) {
     <script src="<?php echo $base_url;?>/sites/all/themes/daycare/slider_engine/sliderengine/initslider-1.js"></script>
 <!-- End of head section HTML codes -->
     
+<a style="display:none;" href="https://plus.google.com/105036878866977951618" rel="publisher">Google+</a>
+
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <div id="home-content">
         <header id="header" style="<?php //echo $header_style;  ?>">
