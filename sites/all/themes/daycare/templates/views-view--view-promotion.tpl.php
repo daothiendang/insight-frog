@@ -5,12 +5,12 @@ if (count($rows)) :
     $title = $view->display[$view->current_display]->display_title;
 ?>
 
-<div class="col-xs-offset-1 col-xs-10 promotion_button_div">
+<div class="col-xs-12 col-md-offset-1 col-md-10 promotion_button_div">
     <?php $count=1;?>
     <?php foreach ($rows as $row) :?>
         <div class="col-xs-4 promotion_button_item" >
             <div class="promotion_button box_shadow" id="promotion_button_<?php echo $count;?>">
-                <a href="#"><?php echo strip_tags($row['title']);?></a>
+                <a href="#promotion_title_<?php echo $count; ?>"><?php echo strip_tags($row['title']);?></a>
             </div>
         </div>
         <?php $count++;?>
@@ -18,6 +18,7 @@ if (count($rows)) :
 </div>
 
 <div class="promotion_content">
+    <?php $count=1;?>
     <?php foreach ($rows as $row) :?>
         <div class="promotion_list">
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 col-md-offset-1 col-md-4 promotion_img">
@@ -27,7 +28,7 @@ if (count($rows)) :
                 </div>
             </div>
             <div class="col-xs-12 col-sm-offset-0 col-sm-7 col-md-6">
-                <div class="promotion_title"><?php echo strip_tags($row['title']);?></div>
+                <div class="promotion_title" id="promotion_title_<?php echo $count?>"><?php echo strip_tags($row['title']);?></div>
                 <div class="promotion_text">
                     <?php if ($row['field_promotion_summary'] != ''):?>
                         <div class="promotion_summary">
@@ -45,6 +46,7 @@ if (count($rows)) :
             </div>
             <div class="clear"></div>
         </div>
+        <?php $count++;?>
     <?php endforeach;?>
     
 </div>
