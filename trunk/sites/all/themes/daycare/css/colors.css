@@ -59,7 +59,7 @@ h1, h2 { color: #333333; }
         color: #332f3e;
         font-size: 24px;
     }
-    .service_detail, #service_yellow_div, #service_promotion_div {
+    .list_services .service_detail, #service_yellow_div, #service_promotion_div {
         display: none;
     }
     .list_services .service_icon {
