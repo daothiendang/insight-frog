@@ -488,25 +488,6 @@ ul.social li {
 }
 
 
-@media only screen and (max-width:1180px){
-    #footer_left {
-        float: none;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 480px;
-    }
-    #footer_right #site_info {
-        margin-right: 50px;
-    }
-    #footer_right {
-        float: none;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 525px;
-    }
-}
-
-
 /*  --------------------------  Page About Us  -----------------------------  */
 #about_us_header {
     clear: both;
@@ -963,11 +944,14 @@ a.contact_header_item {
 
 .promotion_button_div .promotion_button_item:first-child {
     padding-left: 0;
+    padding-right: 15px;
 }
 .promotion_button_div .promotion_button_item:last-child {
+    padding-left: 15px;
     padding-right: 0;
 }
 .promotion_button_item {
+    padding: 0 7px;
     height: 60px; 
     position: relative;
 }
@@ -996,6 +980,7 @@ a.contact_header_item {
 .promotion_button a {
     display: table-cell; 
     vertical-align: middle; 
+    padding: 0 10px;
     text-align: center; 
     color: #fff;
     text-transform: uppercase;

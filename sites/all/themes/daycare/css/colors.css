@@ -25,6 +25,27 @@ h1, h2 { color: #333333; }
 #site-menu ul li a.active { background: #eeeeee; color: #000000; }
 
 
+@media only screen and (max-width:1180px){
+    #footer_left {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 480px;
+    }
+    #footer_right #site_info {
+        margin-right: 50px;
+    }
+    #footer_right {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 525px;
+    }
+    .promotion_button {
+        height: 120px;
+    }
+
+}
 @media only screen and (max-width:992px){
     #header2 p, .about_title {
         text-align: center!important;
@@ -170,6 +191,18 @@ h1, h2 { color: #333333; }
     }
     .promotion_summary, .promotion_full {
         text-align: justify;
+    }
+    .promotion_button a {
+        font-size: 14px;
+    }
+    .promotion_button_div .promotion_button_item:first-child {
+        padding-right: 8px;
+    }
+    .promotion_button_div .promotion_button_item:last-child {
+        padding-left: 8px;
+    }
+    .promotion_button_item {
+        padding: 0 4px;
     }
 }
 
