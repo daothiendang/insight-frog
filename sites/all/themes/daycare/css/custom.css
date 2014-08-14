@@ -502,9 +502,6 @@ ul.social li {
     width: 100%;
     max-width: 1280px;
 }
-.about_us_header_col {
-    padding-right: 7%;
-}
 .about_title {
     margin-bottom: 24px;
     color: #020202;
@@ -516,6 +513,9 @@ ul.social li {
 }
 .about_full {
     display: none;
+}
+.contact_us_header li {
+    padding: 0;
 }
 .about_read_more, .promotion_read_more {
     margin: 15px 0 25px 0;
@@ -598,12 +598,12 @@ ul.social li {
     min-height: 920px;
 }
 #service_main_content {
-    float: left;
+    float: right;
     margin-bottom: 20px;
     padding: 20px 0 0 0;
 }
 #service_right_sidebar {
-    float: left;
+    float: right;
     padding: 0;
     min-height: 920px;
     background: #f4f4f4;
@@ -797,6 +797,7 @@ a.contact_header_item {
     display: table-cell;
     vertical-align: middle;
     margin: 0 5px;
+    padding: 5px;
     color: #f4f4f4;
     text-decoration: none;
     text-align: center;
@@ -805,13 +806,13 @@ a.contact_header_item {
     cursor: pointer;
 }
 #header_send_email {
-    padding-left: 6px;
+    padding-left: 36px;
 }
 #header_reserve {
-    padding: 0 3px;
+    padding: 0 18px;
 }
 #header_customize {
-    padding-right: 6px;
+    padding-right: 36px;
 }
 #header_send_email .contact_us_box {
     background: #ef6951;
@@ -990,7 +991,7 @@ a.contact_header_item {
 }
 .promotion_list {
     clear: left;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     width: 100%;
 }
 .promotion_list .promotion_img {
