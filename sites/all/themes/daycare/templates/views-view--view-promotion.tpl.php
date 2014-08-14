@@ -20,15 +20,16 @@ if (count($rows)) :
 <div class="promotion_content">
     <?php $count=1;?>
     <?php foreach ($rows as $row) :?>
+        <a style="display:block; widht: 100%;height: 20px;" id="promotion_title_<?php echo $count?>"></a>
         <div class="promotion_list">
-            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 col-md-offset-1 col-md-4 promotion_img">
+            <div class="col-xs-12 col-sm-offset-0 col-sm-5 col-md-offset-1 col-md-4 promotion_img">
                 <?php echo $row['field_promotion_image'];?>
                 <div class="promotion_price">
                     <?php echo $row['field_price'];?>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-offset-0 col-sm-7 col-md-6">
-                <div class="promotion_title" id="promotion_title_<?php echo $count?>"><?php echo strip_tags($row['title']);?></div>
+                <div class="promotion_title"><?php echo strip_tags($row['title']);?></div>
                 <div class="promotion_text">
                     <?php if ($row['field_promotion_summary'] != ''):?>
                         <div class="promotion_summary">

@@ -108,7 +108,7 @@ if ($header_bg_file) {
                         <?php $blockVision = module_invoke('block', 'block_view', '11');?>
 
                         <div id="about_us_slogan" class="col-xs-12 col-sm-6">
-                            <div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-10 about_us_header_col">
+                            <div class="col-xs-12 col-md-offset-2 col-md-10 about_us_header_col">
                                 <div class="about_title">INTRODUCTION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
@@ -126,7 +126,7 @@ if ($header_bg_file) {
                             </div>
                         </div>
                         <div id="header2_info"   class="col-xs-12 col-sm-6">
-                            <div class="col-xs-12 col-md-10 about_us_header_col">
+                            <div class="col-xs-12 col-md-offset-2 col-md-10 about_us_header_col">
                                 <div class="about_title">OUR VISION</div>
                                 <div class="about_header_text">
                                     <div class="about_summarize">
