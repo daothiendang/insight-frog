@@ -199,6 +199,13 @@ h1, h2 { color: #333333; }
         min-height: 50px;
         background: none;
     }
+    #box_services {
+        margin: 0px auto 10px auto;
+    }
+    .service_title {
+        margin-top: 50px;
+        margin-bottom: 27px;
+    }
     #box_services .nav-tabs>li {
         width: 16.66%;;
     }
@@ -207,6 +214,12 @@ h1, h2 { color: #333333; }
     }
     .list_services {
         min-height: 0;
+    }
+    #service_content .col-xs-12, #service_banner .col-xs-12 {
+        padding: 0;
+    }
+    #service_content p, #service_content .service_title {
+        padding: 0 15px;
     }
     
     /*  ---------------------------  contact us  ---------------------------  */
@@ -277,10 +290,10 @@ h1, h2 { color: #333333; }
         width: 33.333333%;;
         min-height: 60px;
     }
-    #service_content .col-xs-12 {
-        padding: 0;
+    .service_body td {
+        padding: 0 2px;
     }
-    #service_content p, #service_content .service_title {
-        padding: 0 15px;
+    .service_body p, .service_body td, .service_body span {
+        font-size: 13px!important;
     }
 }
