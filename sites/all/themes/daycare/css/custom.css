@@ -678,6 +678,8 @@ ul.social li {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     text-align: center;
 }
 .list_services .service_icon_thumbnail, .list_services .service_icon_hover {
@@ -695,6 +697,8 @@ ul.social li {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     margin: 0;
     width: 70%;
     font-size: 14px;
