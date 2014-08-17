@@ -16,7 +16,7 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
                     <?php if (count($rows)) :?>
                         <?php foreach ($rows as $row) : ?>
                             <li class="list_services">
-                                <a href="#<?php echo $row['field_display_position']; ?>" role="tab" data-toggle="tab" style="display:block; background:none; border:none;">
+                                <a href="#<?php echo $row['field_display_position']; ?>" role="tab" data-toggle="tab" style="width:100%;display:inline-block; background:none; border:none;">
                                     <div class="service_icon">
                                         <div class="service_icon_thumbnail"><?php echo $row['field_image_thumbnail']; ?></div>
                                         <div class="service_icon_hover"><?php echo $row['field_image_hover_red']; ?></div>
