@@ -168,6 +168,12 @@ h1, h2 { color: #333333; }
         position: relative;
     }
     /*  -------------------------------  about us  -------------------------  */
+    #about_us_slogan .about_us_header_col {
+        padding: 0 25px;
+    }
+    #header2_info .about_us_header_col {
+        padding: 0 25px;
+    }
     .member {
         padding: 0;
     }
@@ -284,7 +290,13 @@ h1, h2 { color: #333333; }
     #testimonial_title {
         margin-bottom: 19px;
     }
-    
+    /*  ---------------------------  about us  -----------------------------  */
+    #about_us_slogan .about_us_header_col {
+        padding: 0 5px;
+    }
+    #header2_info .about_us_header_col {
+        padding: 0 5px;
+    }
     /*  ---------------------------  service  ------------------------------  */
     #box_services .nav-tabs>li {
         width: 33.333333%;;

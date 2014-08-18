@@ -531,6 +531,13 @@ ul.social li {
     max-width: 100%;
     height: auto!important;
 }
+
+#about_us_slogan .about_us_header_col {
+    padding-left: 5px;
+}
+#header2_info .about_us_header_col {
+    padding-right: 5px;
+}
 /*  ------------------------------------------------------------------------  */
 
 /*  --------------------  About Us Team Member -----------------------------  */
@@ -666,8 +673,7 @@ ul.social li {
     font-size: 16px;
 }
 #box_services #myTab, .contact_us_header#myTab {
-    list-style: none;
-    border: 0;
+    
 }
 .list_services {
     float: left;
@@ -782,9 +788,11 @@ ul.social li {
 
 /*  ------------------------  Contact Us Page  -----------------------------  */
 .contact_us_header {
+    list-style: none;
     margin: 50px auto 70px;
     width: 100%;
-    max-width: 1050px;
+    max-width: 1100px;
+    border: 0;
 }
 .contact_us_header li.col-xs-4 {
     height: 194px;
