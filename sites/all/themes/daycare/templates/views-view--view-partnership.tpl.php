@@ -6,7 +6,7 @@ if (count($rows)) :
 ?>
 <div id="box_partnership">
     <div style="float:left; width:100%; text-align: center;">
-        <a id="become_partner" class="box_shadow" href="#">BECOME OUR PARTNER</a>
+        <a id="become_partner" class="box_shadow" href="<?php echo $base_url;?>/contact-us">BECOME OUR PARTNER</a>
     </div>
     <div id="partner_inner">
         <?php foreach ($rows as $row) :?>
