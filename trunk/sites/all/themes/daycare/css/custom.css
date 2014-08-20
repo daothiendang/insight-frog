@@ -612,7 +612,6 @@ ul.social li {
 #service_right_sidebar {
     float: right;
     padding: 0;
-    min-height: 920px;
     background: #f4f4f4;
     overflow: visible;
 }
@@ -672,9 +671,6 @@ ul.social li {
     text-decoration: none;
     font-size: 16px;
 }
-#box_services #myTab, .contact_us_header#myTab {
-    
-}
 .list_services {
     float: left;
     width: 100%;
@@ -724,6 +720,12 @@ ul.social li {
     /* reset styles (optional): */
     list-style: none;
     margin: 0;
+}
+#box_services .nav-tabs {
+    border: 0;
+}
+#box_services .nav-tabs>li>a {
+    margin-right: 0;
 }
 #service_promotion_div {
     clear: left;
