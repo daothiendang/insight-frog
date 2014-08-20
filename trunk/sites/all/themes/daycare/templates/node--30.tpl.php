@@ -57,12 +57,16 @@
             </div>
         </div>
         <div class="tab-pane fade in" id="contact_reserve">
-            <span class="contact_title" style="color:#2ecc71;">RESERVE A MEETUP</span><br><br><br>
-            This function is currently under development
+            <div class="col-xs-12">
+                <span class="contact_title" style="color:#2ecc71;">RESERVE A MEETUP</span><br><br><br>
+                This function is currently under development
+            </div>
         </div>
         <div class="tab-pane fade in" id="contact_customize">
-            <span class="contact_title" style="color:#3498db;">CUSTOMIZE YOUR REQUEST</span><br><br><br>
-            This function is currently under development
+            <div class="col-xs-12">
+                <span class="contact_title" style="color:#3498db;">CUSTOMIZE YOUR REQUEST</span><br><br><br>
+                This function is currently under development
+            </div>
         </div>
         <div class="clear"></div>
     </div>
