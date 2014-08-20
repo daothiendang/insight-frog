@@ -1,3 +1,8 @@
+$(document).ready(function() {
+    setHeightForServiceRightSidebar();
+});
+
+
 /*  ----------------------------  Home page  -------------------------------  */
 // testimonial
 noOfTestimonial = $("#testimonial_inner .testimonial_content").length;
@@ -16,8 +21,8 @@ if (noOfTestimonial > 1) {
 
 // promotion button
 $(document).scroll(function() {
-    windowHeight = $(window).width();
-    if (windowHeight > 768) {
+    windowWidth = $(window).width();
+    if (windowWidth > 768) {
         var y = $(this).scrollTop();
     //    alert(y);
         testimonialDistance = $('#box_testimonial').offset().top - 200;
@@ -103,6 +108,19 @@ $('#box_services #myTab a').click(function () {
 //  e.preventDefault();
 //  $(this).tab('show');
 });
+
+// set height for right sidebar
+$( window ).resize(function() {
+    setHeightForServiceRightSidebar();
+});
+function setHeightForServiceRightSidebar() {
+    if ($(window).width() > 768) {
+        contentHeight = $('#service_content').height();
+        $('#service_right_sidebar').height(contentHeight);
+    } else {
+        $('#service_right_sidebar').removeAttr('height');
+    }
+}
 
 /*  ----------------------------  Contact  -------------------------------  */
 $('#about_us_header #myTab a').click(function (e) {
