@@ -25,14 +25,14 @@ $(document).scroll(function() {
     if (windowWidth > 768) {
         var y = $(this).scrollTop();
     //    alert(y);
-        testimonialDistance = $('#box_testimonial').offset().top - 200;
+        testimonialDistance = $('#box_testimonial').offset().top - 500;
     //    tellRequestDistance = $('#tell_request').offset().top - 100;
         offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
 
     //    if (y > testimonialDistance && y < tellRequestDistance) {
         if (y > testimonialDistance) {
             $('#btn_promotion').css('position', 'fixed');
-            $('#btn_promotion').css('top', '50%');
+            $('#btn_promotion').css('top', '80%');
             $('#btn_promotion').css('right', offsetRight);
         } else {
             $('#btn_promotion').css('position', 'absolute');
@@ -118,7 +118,8 @@ function setHeightForServiceRightSidebar() {
         contentHeight = $('#service_content').height();
         $('#service_right_sidebar').height(contentHeight);
     } else {
-        $('#service_right_sidebar').removeAttr('height');
+//        alert(3);
+        $('#service_right_sidebar').height(0);
     }
 }
 

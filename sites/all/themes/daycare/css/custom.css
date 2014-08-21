@@ -99,6 +99,9 @@ body {
 .menu .menu_primary li.menu-843 {
     border-top: 5px solid #2ecc71;
 }
+.menu .menu_primary li.menu-913 {
+    display: none;
+}
 .menu_primary li:hover {
     text-decoration: none;
 }
@@ -801,7 +804,7 @@ ul.social li {
     position: relative;
 }
 .contact_us_box {
-    position: absolute;
+    /*position: absolute;*/
     float: left;
     display: table;
     width: 100%;
@@ -971,7 +974,7 @@ a.contact_header_item {
     position: relative;
 }
 .promotion_button {
-    position: absolute; 
+    /*position: absolute;*/
     float: left;
     display: table;
     width: 100%;
