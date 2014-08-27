@@ -24,9 +24,12 @@ $(document).scroll(function() {
     windowWidth = $(window).width();
     if (windowWidth > 768) {
         var y = $(this).scrollTop();
+    //    alert(y);
         testimonialDistance = $('#box_testimonial').offset().top - 500;
+    //    tellRequestDistance = $('#tell_request').offset().top - 100;
         offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
 
+    //    if (y > testimonialDistance && y < tellRequestDistance) {
         if (y > testimonialDistance) {
             $('#btn_promotion').css('position', 'fixed');
             $('#btn_promotion').css('top', '80%');
@@ -65,49 +68,29 @@ $('a[href=' + activeService + ']').parent().addClass('active');
 $('.active').find('.service_icon_thumbnail').hide();
 $('.active').find('.service_icon_hover').show();
 
-// hover thumbnail img
-$('.list_services .service_icon_thumbnail img').mouseover(function() {
-    if (!$(this).closest('.list_services').hasClass('active')) {
-        $(this).parent().hide();
-        $(this).parent().next().show();
-        $(this).parent().parent().next().css('color', '#ea544a');
+// hover list service
+$('.list_services a').mouseover(function() {
+    if (!$(this).hasClass('active')) {
+        $(this).find('.service_icon_thumbnail').hide();
+        $(this).find('.service_icon_hover').show();
+        $(this).find('.service_detail').css('color', '#ea544a');
     }
 });
-$('.list_services .service_icon_hover img').mouseout(function() {
+$('.list_services a').mouseout(function() {
     if (!$(this).closest('.list_services').hasClass('active')) {
-        $(this).parent().hide();
-        $(this).parent().prev().show();
-        $(this).parent().parent().next().css('color', '#333333');
-    }
-});
-
-// hover service name
-$('.list_services .service_detail').mouseover(function() {
-    if (!$(this).closest('.list_services').hasClass('active')) {
-        $(this).prev().find('.service_icon_thumbnail').hide();
-        $(this).prev().find('.service_icon_hover').show();
-        $(this).css('color', '#ea544a');
-    }
-});
-$('.list_services .service_detail').mouseout(function() {
-    if (!$(this).closest('.list_services').hasClass('active')) {
-        $(this).prev().find('.service_icon_hover').hide();
-        $(this).prev().find('.service_icon_thumbnail').show();
-        $(this).css('color', '#333333');
+        $(this).find('.service_icon_hover').hide();
+        $(this).find('.service_icon_thumbnail').show();
+        $(this).find('.service_detail').css('color', '#333333');
     }
 });
 
+// click list service
 $('#box_services #myTab a').click(function () {
     if (!$(this).parent().hasClass('active')) {
-        $('.list_services.active').find('.service_icon_hover').hide();
-        $('.list_services.active').find('.service_icon_thumbnail').show();
-        $('.list_services.active').find('.service_detail').css('color', '#333333');
-        $('.list_services.active').removeClass('active');
+        $('.active').find('.service_icon_hover').hide();
+        $('.active').find('.service_icon_thumbnail').show();
+        $('.active').find('.service_detail').css('color', '#333333');
         window.location.hash = $(this).attr('href');
-        
-//        $('a[href=' + $(this).attr('href') + ']').parent().addClass('active');
-//        $('.active').find('.service_icon_thumbnail').hide();
-//        $('.active').find('.service_icon_hover').show();
     }
 //  e.preventDefault();
 //  $(this).tab('show');
