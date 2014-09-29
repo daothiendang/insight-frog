@@ -23,8 +23,8 @@ if (noOfTestimonial > 1) {
 $(document).scroll(function() {
     windowWidth = $(window).width();
     if (windowWidth > 768) {
+        $('#btn_promotion').css('margin', '0');
         var y = $(this).scrollTop();
-    //    alert(y);
         testimonialDistance = $('#box_testimonial').offset().top - 500;
     //    tellRequestDistance = $('#tell_request').offset().top - 100;
         offsetRight = $(window).width() - ($('#box_testimonial').offset().left + $('#box_testimonial').width());
