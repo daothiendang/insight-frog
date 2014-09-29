@@ -33,7 +33,7 @@ h1, h2 { color: #333333; }
         max-width: 480px;
     }
     #footer_right #site_info {
-        margin-right: 50px;
+        margin-right: 20px;
     }
     #footer_right {
         float: none;
@@ -158,7 +158,7 @@ h1, h2 { color: #333333; }
     #footer_right #social_icon {
         float: none;
         margin: 0 auto 15px auto;
-        width: 205px;
+        width: 250px;
     }
     #footer_right #social_icon a {
         margin-bottom: 15px;
