@@ -93,7 +93,7 @@ body {
 .menu .menu_primary li.menu-841 {
     border-top: 5px solid #f1c40f;
 }
-.menu .menu_primary li.menu-842 {
+.menu .menu_primary li.menu-919 {
     border-top: 5px solid #3498db;
 }
 .menu .menu_primary li.menu-843 {
@@ -754,7 +754,6 @@ ul.social li {
 #box_partnership {
     float: left;
     margin: 0 auto;
-    padding-bottom: 10%;
     width: 100%;
     background: #ecf0f1;
 }
@@ -1029,21 +1028,16 @@ a.contact_header_item {
 /*  ------------------------------------------------------------------------  */
 
 /*  ----------------------------  Package Tour  ----------------------------  */
-#package_container {
-    margin: 0 auto 40px auto;
-    max-width: 960px;
-    color: #6d6e71;
-}
-#package_container table strong {
-    color: #000;
-}
-#package_container .field-name-field-package-tour-avatar {
-    margin: 30px auto;
-}
-#package_container .field-name-field-package-tour-avatar img {
+.package_tour {
+    clear: both;
+    float: left;
+    padding-top:3px;
     width: 100%;
+    border-top:1px dashed #000;
 }
-#package_container .table_package_tour tr td {
-    padding: 8px;
-    border: 1px solid #FF8040;
+.package_avatar {
+    padding: 0;
+}
+.package_content {
+    padding: 0px 15px;
 }
