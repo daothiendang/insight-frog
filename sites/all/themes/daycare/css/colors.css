@@ -89,6 +89,10 @@ h1, h2 { color: #333333; }
     #box_services #myTab {
         margin-top: 120px;
     }
+    /*  --------------------------  package content  -----------------------  */
+    .package_content {
+        margin-top: 10px;
+    }
 }
 
 
@@ -271,6 +275,10 @@ h1, h2 { color: #333333; }
     }
     .promotion_button_item {
         padding: 0 4px;
+    }
+    /*  ------------------------  packages  ---------------------------------  */
+    .package_content, .package_content .promotion_title {
+        margin-top: 0;
     }
 }
 
