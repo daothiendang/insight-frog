@@ -9,12 +9,12 @@ if (count($rows)) :
         <div class="package_tour">
             <div class="package_avatar col-xs-5 col-sm-3">
                 <?php print_r($row['field_package_tour_avatar']);?>
-                <div style="padding:5px 0; text-align:center; font-size:15px;">
+                <div class="promotion_price" style="margin:0; text-align:center">
                     <?php print_r($row['field_package_tour_price']);?>
                 </div>
             </div>
             <div class="package_content col-xs-7 col-sm-9">
-                <div style="margin-bottom:15px;">
+                <div class="promotion_title">
                     <?php print_r($row['body']);?>
                 </div>
                 <div style="text-align:justify;">
@@ -24,7 +24,7 @@ if (count($rows)) :
                     <?php 
                         preg_match('/href=(["\'])([^\1]*)\1/i', $row['field_pdf_file'], $m);
                     ?>
-                    Download the itinerary <a target="_blank" href="<?php echo $m[2];?>">here</a>
+                    <a target="_blank" href="<?php echo $m[2];?>" style="color:#89A33C">DOWNLOAD THE ITINERARY HERE</a>
                 </div>
             </div>
         </div>

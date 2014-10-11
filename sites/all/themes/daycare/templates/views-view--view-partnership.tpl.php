@@ -5,8 +5,8 @@ if (count($rows)) :
     $title = $view->display[$view->current_display]->display_title;
 ?>
 <div id="box_partnership">
-    <div style="margin:20px auto; width:100%; text-align:center; font-size:35px; color:#949899">
-        OUR PARTNER
+    <div style="float:left; width:100%; text-align: center;">
+        <a id="become_partner" class="box_shadow" href="<?php echo $base_url;?>/contact-us">BECOME OUR PARTNER</a>
     </div>
     <div id="partner_inner">
         <?php foreach ($rows as $row) :?>
@@ -16,9 +16,6 @@ if (count($rows)) :
                 </a>
             </div>
         <?php endforeach;?>
-    </div>
-    <div style="float:left; width:100%; text-align: center;">
-        <a id="become_partner" class="box_shadow" href="<?php echo $base_url;?>/contact-us">BECOME OUR PARTNER</a>
     </div>
 </div>
 <?php endif; ?>
