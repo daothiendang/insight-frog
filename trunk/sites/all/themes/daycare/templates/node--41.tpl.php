@@ -4,6 +4,7 @@
     $serviceRight = module_invoke('block', 'block_view', '14');
 ?>
 
+<!--------------------------------------------------  Header  ------------------------------------------------------->
 <div id="header" style="float:none;">
     <div id="service_left_header"  class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
         <?php echo $serviceLeft['content']; ?>
@@ -13,9 +14,11 @@
     </div>
     <div style="clear: left;"></div>
 </div>
+
+<!---------------------------------------------  Information  ------------------------------------------------------->
 <div class="col-xs-12 col-sm-offset-1 col-sm-10">
     <?php print render($content['field_package_tour_avatar']);?>
-    <div style="margin:20px auto; text-align:center; font-size:32px; font-weight:bold; color:#404040;">
+    <div id="services_title" style="text-transform: uppercase">
         <?php print_r($node->title);?>
     </div>
     <div style="text-align:justify">
