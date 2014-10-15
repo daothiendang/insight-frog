@@ -280,6 +280,9 @@ h1, h2 { color: #333333; }
     .package_content, .package_content .promotion_title {
         margin-top: 0;
     }
+    .package_tour .promotion_price {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width:480px){

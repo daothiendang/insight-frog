@@ -1031,7 +1031,7 @@ a.contact_header_item {
 .package_tour {
     clear: both;
     float: left;
-    padding-top:3px;
+    padding-top: 25px;
     width: 100%;
     border-top:1px dashed #000;
 }
@@ -1041,4 +1041,7 @@ a.contact_header_item {
 .package_content {
     margin-top: 30px;
     padding: 0px 15px;
+}
+.package_tour .promotion_price {
+    font-size: 21px;
 }
