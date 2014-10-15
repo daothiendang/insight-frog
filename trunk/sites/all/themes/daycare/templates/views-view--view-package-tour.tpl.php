@@ -11,6 +11,9 @@ if (count($rows)) :
                 <?php print_r($row['field_package_tour_avatar']);?>
                 <div class="promotion_price" style="margin:0; text-align:center">
                     <?php print_r($row['field_package_tour_price']);?>
+                    <?php if ($row['field_save']!= ''):?>
+                         - (Save <?php print_r($row['field_save']);?>)
+                    <?php endif;?>
                 </div>
             </div>
             <div class="package_content col-xs-7 col-sm-9">

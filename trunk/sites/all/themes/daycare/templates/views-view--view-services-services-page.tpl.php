@@ -45,22 +45,20 @@ $servicesIntroduction = module_invoke('block', 'block_view', '16');
             </div>
             <?php if (count($rows)) :?>
                 <div id="myTabContent" class="tab-content">
-                <?php foreach ($rows as $row) : ?>
-                    <div class="tab-pane fade in" id="<?php echo $row['field_display_position']; ?>">
-                        <div class="service_title">
-                            <?php print_r(strip_tags($row['title'])); ?>
-                        </div>
+                    <?php foreach ($rows as $row) : ?>
+                        <div class="tab-pane fade in" id="<?php echo $row['field_display_position']; ?>">
+                            <div class="service_title">
+                                <?php print_r(strip_tags($row['title'])); ?>
+                            </div>
 
-                        <div class="service_body">
-                            <?php echo $row['body']; ?>
+                            <div class="service_body">
+                                <?php echo $row['body']; ?>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-
-                  </div>
+                    <?php endforeach; ?>
+                </div>
             <?php endif; ?>
         </div>
-        
     </div>
 </div>
 
