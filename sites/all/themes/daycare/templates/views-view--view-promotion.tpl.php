@@ -20,7 +20,7 @@ if (count($rows)) :
 <div class="promotion_content">
     <?php $count=1;?>
     <?php foreach ($rows as $row) :?>
-        <a style="display:block; widht: 100%;height: 20px;" id="promotion_title_<?php echo $count?>"></a>
+        <a style="display:block; width: 100%;height: 20px;" id="promotion_title_<?php echo $count?>"></a>
         <div class="promotion_list">
             <div class="col-xs-12 col-sm-offset-0 col-sm-5 col-md-offset-1 col-md-4 promotion_img">
                 <?php echo $row['field_promotion_image'];?>
