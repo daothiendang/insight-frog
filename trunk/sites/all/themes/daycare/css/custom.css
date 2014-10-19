@@ -1045,3 +1045,10 @@ a.contact_header_item {
 .package_tour .promotion_price {
     font-size: 21px;
 }
+.tour_description {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.tour_description h3 {
+    text-align: center;
+}
