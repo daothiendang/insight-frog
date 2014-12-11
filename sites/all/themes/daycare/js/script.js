@@ -122,3 +122,17 @@ $('.promotion_read_more').click(function() {
     var text = $(this).text();
     $(this).text(text === "HIDE" ? "READ MORE" : "HIDE");
 });
+
+
+/*  -----------------------------  Booking  --------------------------------  */
+$('.package_tour_intro').click(function() {
+    visibleStatus = $(this).parent().find('.package_tour_list').css('display');
+    $(this).next().slideToggle();
+    
+    if ($.trim(visibleStatus) !== 'block') {
+        $('html, body').animate({
+            scrollTop: $(this).next().offset().top
+        }, 1000);
+    }
+    
+});
