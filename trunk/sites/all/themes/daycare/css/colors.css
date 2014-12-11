@@ -89,6 +89,10 @@ h1, h2 { color: #333333; }
     #box_services #myTab {
         margin-top: 120px;
     }
+    /*  ----------------------------  contact us  --------------------------  */
+    #box_social_link .col-xs-12 {
+        max-width: 712px;
+    }
     /*  --------------------------  package content  -----------------------  */
     .package_content {
         margin-top: 10px;
@@ -246,6 +250,10 @@ h1, h2 { color: #333333; }
     }
     #header_customize {
         padding-right: 14px;
+    }
+    #box_social_link .col-xs-12 {
+        padding: 0;
+        max-width: 330px;
     }
     /*  ------------------------  promotion  ---------------------------------*/
     .promotion_content .promotion_list:first-of-type img {
