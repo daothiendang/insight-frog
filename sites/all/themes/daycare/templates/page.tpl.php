@@ -169,7 +169,7 @@ if ($header_bg_file) {
                     <li id="header_send_email" class="col-xs-4">
                         <div class="contact_us_box">
                             <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                                FLIGHT TICKET
+                                INTERNATIONAL FLIGHT TICKET
                             </a>
                         </div>
                     </li>
@@ -183,7 +183,7 @@ if ($header_bg_file) {
                     <li id="header_customize"  class="col-xs-4">
                         <div class="contact_us_box">
                             <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                                VISA
+                                VISA SERVICE
                             </a>
                         </div>
                     </li>
