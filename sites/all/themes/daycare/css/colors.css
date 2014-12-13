@@ -326,4 +326,12 @@ h1, h2 { color: #333333; }
     .service_body p, .service_body td, .service_body span {
         font-size: 13px!important;
     }
+    /*  -----------------------------  booking  ----------------------------- */
+    #header_send_email, #header_reserve, #header_customize {
+        padding: 0;
+    }
+    a.contact_header_item {
+        margin: 0;
+        padding: 0;
+    }
 }
