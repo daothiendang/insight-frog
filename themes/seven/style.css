@@ -1,4 +1,6 @@
-
+#console .messages.error {
+    display: none;
+}
 /**
  * Generic elements.
  */
