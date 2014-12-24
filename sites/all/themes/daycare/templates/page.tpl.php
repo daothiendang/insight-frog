@@ -164,7 +164,20 @@ if ($header_bg_file) {
     <?php if (arg(0) == 'node' && is_numeric(arg(1))): ?>
         <?php $nodeid = arg(1);?>
         <?php if ($nodeid == 41):?>
-            <div id="about_us_header" style="margin-bottom:40px;">
+            <?php $serviceLeft  = module_invoke('block', 'block_view', '13'); ?>
+            <?php $serviceRight = module_invoke('block', 'block_view', '14'); ?>
+
+            <div id="header">
+                <div id="service_left_header"  class="col-xs-offset-1 col-xs-10 col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
+                    <?php echo $serviceLeft['content']; ?>
+                </div>
+                <div id="service_right_header" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1">
+                    <?php echo $serviceRight['content']; ?>
+                </div>
+                <div style="clear: left;"></div>
+            </div>
+    
+            <div style="float:left; margin:0; width:100%;">
                 <ul id="myTab" class="contact_us_header" role="tablist">
                     <li id="header_send_email" class="col-xs-4">
                         <div class="contact_us_box">
@@ -176,14 +189,14 @@ if ($header_bg_file) {
                     <li id="header_reserve"    class="col-xs-4">
                         <div class="contact_us_box">
                             <a href="#contact_reserve" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                                PACKAGE TOUR
+                                PACKAGE TOURS
                             </a>
                         </div>
                     </li>
                     <li id="header_customize"  class="col-xs-4">
                         <div class="contact_us_box">
                             <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                                VISA SERVICE
+                                VISA SERVICES
                             </a>
                         </div>
                     </li>
