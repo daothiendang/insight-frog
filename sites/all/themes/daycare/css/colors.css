@@ -291,6 +291,9 @@ h1, h2 { color: #333333; }
     .package_tour .promotion_price {
         font-size: 18px;
     }
+    .package_avatar img {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:480px){
@@ -327,11 +330,17 @@ h1, h2 { color: #333333; }
         font-size: 13px!important;
     }
     /*  -----------------------------  booking  ----------------------------- */
+    .mobile_full_width {
+        padding: 0;
+    }
     #header_send_email, #header_reserve, #header_customize {
         padding: 0;
     }
     a.contact_header_item {
         margin: 0;
         padding: 0;
+    }
+    .package_avatar img {
+        width: 100%;
     }
 }
