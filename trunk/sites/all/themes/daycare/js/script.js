@@ -134,5 +134,9 @@ $('.package_tour_intro').click(function() {
             scrollTop: $(this).next().offset().top
         }, 1000);
     }
-    
+});
+$('#header_reserve').click(function() {
+    $('html, body').animate({
+        scrollTop: $('#main').offset().top
+    }, 1000);
 });
