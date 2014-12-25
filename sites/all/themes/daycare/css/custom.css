@@ -1081,8 +1081,13 @@ a.contact_header_item {
 .tour_description h3 {
     margin: 0 0 8px 0;
     padding: 10px;
-    background: yellow;
     text-align: center;
+}
+.tour_description_north h3 {
+    background:rgb(242, 242, 112);
+}
+.tour_description_center h3 {
+    background:rgb(213, 237, 213);
 }
 .tour_description p, .tour_description + img {
     padding: 0 10px;
@@ -1098,4 +1103,21 @@ a.contact_header_item {
 }
 .package_tour_list {
     display: none;
+}
+.package_tour_tag ul {
+    display: inline;
+    float: left;
+    margin: 10px 0 0 -21px;
+}
+.package_tour_tag .item-list ul li {
+    margin-bottom: 10px;
+    float: left;
+    padding: 3px 7px;
+    background: #7F7F7F;
+    color: #FFF;
+    font-size: 12px;
+    list-style-type: none;
+}
+.package_tour_tag .item-list ul li:first-child {
+    
 }
