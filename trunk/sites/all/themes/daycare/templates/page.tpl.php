@@ -182,7 +182,7 @@ if ($header_bg_file) {
                     <li id="header_send_email" class="col-xs-4">
                         <div class="contact_us_box">
                             <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
-                                INTERNATIONAL FLIGHT TICKET
+                                INTERNAT'L FLIGHTS
                             </a>
                         </div>
                     </li>
