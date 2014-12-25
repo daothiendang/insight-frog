@@ -9,7 +9,7 @@ if (count($rows)) :
 <!----------------------  tour in the north  ---------------------------------->
 <div class="col-xs-12 mobile_full_width" style="margin-bottom: 50px;">
     <div class="package_tour_intro box_shadow_big">
-        <div class="tour_description">
+        <div class="tour_description tour_description_north">
             <?php $blockTourNorth = module_invoke('block', 'block_view', '21');?>
             <?php echo $blockTourNorth['content'];?>
         </div>
@@ -39,6 +39,9 @@ if (count($rows)) :
                             <?php preg_match('/href=(["\'])([^\1]*)\1/i', $row['field_pdf_file'], $m);?>
                             <a target="_blank" href="<?php echo $m[2];?>" style="color:#89A33C">DOWNLOAD THE ITINERARY HERE</a>
                         </div>
+                        <div class="package_tour_tag">
+                            <?php print_r(str_replace(',', '', $row['field_package_tour_tags']));?>
+                        </div>
                     </div>
                 </div>
             <?php endif;?>
@@ -49,7 +52,7 @@ if (count($rows)) :
 <!----------------------  tour in the central  -------------------------------->
 <div class="col-xs-12 mobile_full_width" style="margin-bottom: 50px;">
     <div class="package_tour_intro box_shadow_big">
-        <div class="tour_description">
+        <div class="tour_description tour_description_center">
             <?php $blockTourCentral = module_invoke('block', 'block_view', '22');?>
             <?php echo $blockTourCentral['content'];?>
         </div>
@@ -78,6 +81,9 @@ if (count($rows)) :
                         <div class="package_tour_download">
                             <?php preg_match('/href=(["\'])([^\1]*)\1/i', $row['field_pdf_file'], $m);?>
                             <a target="_blank" href="<?php echo $m[2];?>" style="color:#89A33C">DOWNLOAD THE ITINERARY HERE</a>
+                        </div>
+                        <div class="package_tour_tag">
+                            <?php print_r(str_replace(',', '', $row['field_package_tour_tags']));?>
                         </div>
                     </div>
                 </div>
