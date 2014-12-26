@@ -7,7 +7,7 @@ if (count($rows)) :
     $packageBannerCenter = module_invoke('block', 'block_view', '23');
 ?>
 <!----------------------  tour in the north  ---------------------------------->
-<div class="col-xs-12 mobile_full_width" style="margin-bottom: 50px;">
+<div class="col-xs-12 mobile_full_width">
     <div class="package_tour_intro box_shadow_big">
         <div class="tour_description tour_description_north">
             <?php $blockTourNorth = module_invoke('block', 'block_view', '21');?>
