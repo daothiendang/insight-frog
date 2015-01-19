@@ -1025,6 +1025,8 @@ a.contact_header_item {
 
 .promotion_title {
     margin-top: -6px;
+}
+.promotion_title, .promotion_title a {
     color: #ea544a;
     font-family: opensan-bold;
     font-size: 18px;
@@ -1098,18 +1100,23 @@ a.contact_header_item {
 
 .package_tour_intro {
     margin: 20px 0;
+    padding-bottom: 10px;
     border: 1px solid #A0A0A0;
     cursor: pointer;
 }
 .package_tour_list {
     display: none;
 }
-.package_tour_tag ul {
+.package_tour_tag {
+    float: left;
+}
+.package_tour_tag ul, .package_tour_tag .field-items {
     display: inline;
     float: left;
     margin: 10px 0 0 -21px;
 }
-.package_tour_tag .item-list ul li {
+.package_tour_tag .item-list ul li, .package_tour_tag .field-items .even, .package_tour_tag .field-items .odd {
+    margin: 0 0 0.25em 1.5em;
     margin-bottom: 10px;
     float: left;
     padding: 3px 7px;
@@ -1118,6 +1125,65 @@ a.contact_header_item {
     font-size: 12px;
     list-style-type: none;
 }
-.package_tour_tag .item-list ul li:first-child {
-    
+
+/*package tours*/
+.dash_line {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1050px;
+    height: 10px;
+    border-top: 2px dashed #CCC;
+}
+.package_tour_tag .field-items {
+    display: inline;
+    float: left;
+    margin: 10px 0 0 -17px;
+}
+.package_tour_tag .field-items .even, .package_tour_tag .field-items .odd {
+    margin: 0 0 0.25em 1.5em;
+    margin-bottom: 10px;
+    float: left;
+    padding: 3px 7px;
+    background: #7F7F7F;
+    color: #FFF;
+    font-size: 12px;
+    list-style-type: none;
+}
+.package_tour_big_img img {
+    width: 100%;
+    max-width: 850px !important;
+    max-height: 446px;
+}
+.package_tour_small_img {
+    float: left;
+    margin: 8px auto;
+}
+.package_tour_small_img div {
+    float: left;
+}
+.package_tour_small_img .field-item {
+    padding: 5px;
+    width: 20% !important;
+    height: 100px;
+}
+#main .package_tour_small_img img {
+    float: left;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: pointer;
+}
+.package_tour_content table {
+    width: 100%;
+    border: none;
+}
+.package_tour_content table td {
+    padding: 0 10px;
+}
+.fb_iframe_widget,
+.fb_iframe_widget > span,
+.fb_iframe_widget iframe {
+    width: 100% !important;
+}
+div[id^='___comments_'], div[id^='___comments_'] iframe {
+  width: 100% !important;
 }

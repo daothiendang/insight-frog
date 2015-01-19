@@ -1,14 +1,9 @@
 /* Links */
 /* line 11, ../sass/style.sass */
-a:link, a:visited {
-  color: blue;
-  text-decoration: none;
-}
+
 
 /* line 16, ../sass/style.sass */
-a:hover, a:active {
-    text-decoration: none;
-}
+
 
 /* Titles. */
 /* line 21, ../sass/style.sass */
