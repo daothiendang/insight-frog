@@ -181,21 +181,21 @@ if ($header_bg_file) {
                 <ul id="myTab" class="contact_us_header" role="tablist">
                     <li id="header_send_email" class="col-xs-4">
                         <div class="contact_us_box">
-                            <a href="#contact_send_mail" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            <a href="#flight" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
                                 INTERNAT'L FLIGHTS
                             </a>
                         </div>
                     </li>
                     <li id="header_reserve"    class="col-xs-4">
                         <div class="contact_us_box">
-                            <a href="#contact_reserve" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            <a href="#list_tours" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
                                 PACKAGE TOURS
                             </a>
                         </div>
                     </li>
                     <li id="header_customize"  class="col-xs-4">
                         <div class="contact_us_box">
-                            <a href="#contact_customize" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
+                            <a href="#visa_services" role="tab" data-toggle="tab" class="contact_header_item box_shadow_big">
                                 VISA SERVICES
                             </a>
                         </div>

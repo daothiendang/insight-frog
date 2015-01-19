@@ -16,11 +16,16 @@ if (count($rows)) :
         <?php echo $packageBannerNorth['content']; ?>
     </div>
     <div class="package_tour_list">
-        <?php foreach ($rows as $row) :?>
+        <?php foreach ($rows as $row) :
+            $s = explode('href="', $row['title']);
+            $link = explode('">', $s[1]);
+        ?>
             <?php if ($row['field_package_tour_region'] == 'North'):?>
                 <div class="package_tour">
                     <div class="package_avatar col-xs-12 col-sm-3 col-md-5">
-                        <?php print_r($row['field_package_tour_avatar']);?>
+                        <a href ="<?php echo $link[0];?>">
+                            <?php print_r($row['field_package_tour_avatar']);?>
+                        </a>
                         <div class="promotion_price" style="margin:0; text-align:center">
                             <?php print_r($row['field_package_tour_price']);?>
                             <?php if ($row['field_save']!= ''):?>
@@ -30,7 +35,9 @@ if (count($rows)) :
                     </div>
                     <div class="package_content col-xs-12 col-sm-9 col-md-7">
                         <div class="promotion_title">
-                            <?php print_r($row['body']);?>
+                            <a href ="<?php echo $link[0];?>">
+                                <?php print_r($row['body']);?>
+                            </a>
                         </div>
                         <div style="text-align:justify;">
                             <?php print_r($row['field_short_description']);?><br><br>
@@ -59,11 +66,16 @@ if (count($rows)) :
         <?php echo $packageBannerCenter['content']; ?>
     </div>
     <div class="package_tour_list">
-        <?php foreach ($rows as $row) :?>
+        <?php foreach ($rows as $row) :
+            $s = explode('href="', $row['title']);
+            $link = explode('">', $s[1]);
+        ?>
             <?php if ($row['field_package_tour_region'] == 'Central'):?>
                 <div class="package_tour">
                     <div class="package_avatar col-xs-12 col-sm-3 col-md-5">
-                        <?php print_r($row['field_package_tour_avatar']);?>
+                        <a href ="<?php echo $link[0];?>">
+                            <?php print_r($row['field_package_tour_avatar']);?>
+                        </a>
                         <div class="promotion_price" style="margin:0; text-align:center">
                             <?php print_r($row['field_package_tour_price']);?>
                             <?php if ($row['field_save']!= ''):?>
@@ -73,7 +85,9 @@ if (count($rows)) :
                     </div>
                     <div class="package_content col-xs-12 col-sm-9 col-md-7">
                         <div class="promotion_title">
-                            <?php print_r($row['body']);?>
+                            <a href ="<?php echo $link[0];?>">
+                                <?php print_r($row['body']);?>
+                            </a>
                         </div>
                         <div style="text-align:justify;">
                             <?php print_r($row['field_short_description']);?><br><br>
