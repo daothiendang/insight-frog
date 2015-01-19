@@ -58,15 +58,32 @@ $('.about_read_more').click(function() {
 
 
 //  ---------------------------  Services  -------------------------------------
-// set main content at first time loading
-activeService = '#' + window.location.hash.substr(1);
-if (activeService === '#') {
-    activeService = '#1';
+// set main content at first time loading of Services and Booking
+url = window.location.href;
+var pageName = url.substring(url.lastIndexOf('/') + 1);
+if (pageName.indexOf("#") >= 0) {
+    lastPath = pageName.split('#');
+    if (lastPath[0] === 'services') {
+        activeService = '#' + window.location.hash.substr(1);
+        if (activeService === '#') {
+            activeService = '#1';
+        }
+        $(activeService).addClass('active');
+        $('a[href=' + activeService + ']').parent().addClass('active');
+        $('.active').find('.service_icon_thumbnail').hide();
+        $('.active').find('.service_icon_hover').show();
+    } else if (lastPath[0] === 'package_tours') {
+        activeBooking = '#' + window.location.hash.substr(1);
+        if (activeBooking === '#') {
+            activeBooking = 'list_tours';
+        } else {
+            $('#list_tours').removeClass('active');
+        }
+        $(activeBooking).addClass('active');
+        $('a[href=' + activeBooking + ']').parent().parent().addClass('active');
+    }
 }
-$(activeService).addClass('active');
-$('a[href=' + activeService + ']').parent().addClass('active');
-$('.active').find('.service_icon_thumbnail').hide();
-$('.active').find('.service_icon_hover').show();
+
 
 // hover list service
 $('.list_services a').mouseover(function() {
@@ -109,13 +126,6 @@ function setHeightForServiceRightSidebar() {
     }
 }
 
-/*  ----------------------------  Contact  -------------------------------  */
-$('#about_us_header #myTab a').click(function (e) {
-    e.preventDefault();
-    $(this).tab('show');
-});
-
-
 /*  ---------------------------  Promotion  --------------------------------  */
 $('.promotion_read_more').click(function() {
     $(this).next().slideToggle('slow', function() {});
@@ -125,6 +135,9 @@ $('.promotion_read_more').click(function() {
 
 
 /*  -----------------------------  Booking  --------------------------------  */
+$('.contact_us_header#myTab a').click(function (e) {
+    window.location.hash = $(this).attr('href');
+});
 $('.package_tour_intro').click(function() {
     visibleStatus = $(this).parent().find('.package_tour_list').css('display');
     $(this).next().slideToggle();
@@ -139,4 +152,13 @@ $('#header_reserve').click(function() {
     $('html, body').animate({
         scrollTop: $('#main').offset().top
     }, 1000);
+});
+
+/*  --------------------------  Package Tour  ------------------------------  */
+$('.package_tour_small_img img').click(function() {
+    src = $(this).attr('src');
+    $('.package_tour_big_img img').attr('src', src);
+});
+$('document').ready(function(){
+    $('.fb-comments').attr('data-width', '100%');
 });
