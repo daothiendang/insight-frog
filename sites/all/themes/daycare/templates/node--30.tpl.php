@@ -78,7 +78,7 @@ $gmap = $node->field_link_gmap[$node->language][0]['value'];
             </div>
             <div class="g-page" data-href="//plus.google.com/u/0/105036878866977951618" data-width="320" data-rel="publisher"></div>
         </div>
-    </div>    
+    </div>
 </div>
 
 
