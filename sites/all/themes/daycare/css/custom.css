@@ -48,7 +48,7 @@ body {
 }
 /*---------------------------------- Header --------------------------------  */
 #header {
-    float: left;
+    margin: 0 auto;
     width: 100%;
     max-width: 1280px;
 }
@@ -1081,15 +1081,9 @@ a.contact_header_item {
     text-align: justify;
 }
 .tour_description h3 {
-    margin: 0 0 8px 0;
+    margin: 5px 0 0 0;
     padding: 10px;
     text-align: center;
-}
-.tour_description_north h3 {
-    background:rgb(242, 242, 112);
-}
-.tour_description_center h3 {
-    background:rgb(213, 237, 213);
 }
 .tour_description p, .tour_description + img {
     padding: 0 10px;
@@ -1102,6 +1096,7 @@ a.contact_header_item {
     margin: 20px 0;
     padding-bottom: 10px;
     border: 1px solid #A0A0A0;
+    background: #F4F4F4;
     cursor: pointer;
 }
 .package_tour_list {
@@ -1183,7 +1178,4 @@ a.contact_header_item {
 .fb_iframe_widget > span,
 .fb_iframe_widget iframe {
     width: 100% !important;
-}
-div[id^='___comments_'], div[id^='___comments_'] iframe {
-  width: 100% !important;
 }

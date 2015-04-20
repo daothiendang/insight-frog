@@ -24,6 +24,7 @@ if ($header_bg_file) {
     </script>
     <script src="<?php echo $base_url;?>/sites/all/themes/daycare/slider_engine/sliderengine/amazingslider.js"></script>
     <script src="<?php echo $base_url;?>/sites/all/themes/daycare/slider_engine/sliderengine/initslider-1.js"></script>
+    <script>var siteUrl = '<?php echo $base_url;?>/';</script>
 <!-- End of head section HTML codes -->
     
 <div style="display:none;"><a href="https://plus.google.com/105036878866977951618" rel="publisher">Google+</a></div>
