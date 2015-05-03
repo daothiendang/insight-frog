@@ -63,9 +63,8 @@ $('.about_read_more').click(function() {
 // set main content at first time loading of Services and Booking
 url = window.location.href;
 var pageName = url.replace(siteUrl, '');
-lastPath = pageName.split('/');
 
-if (lastPath[0] === 'services') {
+if (pageName.indexOf('services') >= 0) {
     activeService = '#' + window.location.hash.substr(1);
     if (activeService === '#') {
         activeService = '#1';
@@ -74,7 +73,7 @@ if (lastPath[0] === 'services') {
     $('a[href=' + activeService + ']').parent().addClass('active');
     $('.active').find('.service_icon_thumbnail').hide();
     $('.active').find('.service_icon_hover').show();
-} else if (lastPath[0] === 'package_tours') {
+} else if (pageName.indexOf('package_tours') >= 0) {
     activeBooking = '#' + window.location.hash.substr(1);
     if (activeBooking === '#') {
         activeBooking = 'list_tours';
