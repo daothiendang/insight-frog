@@ -1,6 +1,7 @@
 #console .messages.error {
     display: none;
 }
+
 /**
  * Generic elements.
  */
@@ -449,7 +450,7 @@ table td,
 table th {
   vertical-align: middle;
   padding: 8px 10px;
-  border: 1px solid #ccc;
+  border: 0;
   color: #000;
 }
 tr.even,
@@ -711,12 +712,7 @@ select.form-select:focus {
   color: #000;
   border-color: #ace;
 }
-html.js input.form-autocomplete {
-  background-position: 100% 4px;
-}
-html.js input.throbbing {
-  background-position: 100% -16px;
-}
+
 ul.action-links {
   margin: 1em 0;
   padding: 0 20px 0 20px; /* LTR */
